@@ -1,0 +1,343 @@
+
+/*--- order placement details ---*/
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+*{
+	font-family: "Dela Gothic One", cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.cart-container{
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-left: 0%;
+}
+
+.cart-container > h1{
+	padding: 20px 0;
+}
+
+.shopping-cart{
+	display: flex;
+}
+
+.products{
+	flex: 0.75;
+}
+
+.product{
+	display: flex;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid silver;
+	margin-bottom: 20px;
+}
+
+.product:hover{
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+	transform: scale(1.01);
+}
+
+.product > img{
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.product > img:hover{
+	transform: scale(1.04);
+}
+
+.product-info{
+	padding: 20px;
+	width: 100%;
+	position: relative;
+}
+
+.product-name, .product-price, .product-tax{
+	margin-bottom: 20px;
+}
+
+.product-remove{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/* .product-remove:hover{
+	background-color: white;
+	color: red;
+	font-weight: 600;
+	border: 1px solid red;
+} */
+
+.product-quantity > input{
+	width: 40px;
+	padding: 5px;
+	text-align: center;
+}
+
+.fa{
+	margin-right: 5px;
+}
+
+.cart-total{
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height: 240px;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+
+.cart-total p{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+
+@media screen and (max-width: 700px){
+	.remove{
+		display: none;
+	}
+	.product{
+		height: 150px;
+	}
+	.product > img{
+		height: 150px;
+		width: 200px;
+	}
+
+	.product-name, .product-price, .product-offer{
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.shopping-cart{
+		flex-direction: column;
+	}
+
+	.cart-total{
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 1220px){
+	.cart-container{
+		max-width: 95%;
+	}
+}
+
+
+
+/*--- shop button working functions ---*/
+
+.buy-button{
+  background-color: black;
+  color: white
+}
+
+/* continue shopping and order now function button */
+.buy-button, .remove-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.buy-button:hover, .remove-button:hover {background-color:gray;}
+
+.buy-button:active, .remove-button:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buy-button a, .remove-button a{
+  text-decoration: none;
+  color: white;
+
+}
+
+/* sai lam cua Duan */
+footer {
+	background-color: black;
+	height: 300%;
+	clear: both;
+
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+float: left;
+width: 25%;
+padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+opacity: 0.8;
+cursor: pointer;
+}
+
+.column img:hover {
+opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* The expanding image container */
+.container {
+position:relative;
+display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+position: absolute;
+bottom: 15px;
+left: 15px;
+color: white;
+font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+position: absolute;
+top: 10px;
+right: 15px;
+color: white;
+font-size: 35px;
+cursor: pointer;
+}
+
+header {
+	background-color: white;
+	height: 70px;
+	position: sticky;
+	top: 0;
+
+	text-align: center;
+}
+
+nav a{
+color: black;
+text-decoration: none;
+font-family: Dela Gothic One;
+font-size: 20px;
+padding: 5px 25px;
+display: inline-block;
+}
+
+header img{
+
+	float: left;
+position: sticky;
+top: 0;
+
+}
+
+* {
+box-sizing:border-box;
+}
+
+footer h2{
+
+	color: white;
+	text-align: center;
+	padding-left: 40px;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 10px;
+height: 100%;
+}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+li {
+list-style-type: none;
+text-align:center;
+
+}
+li a{
+text-decoration: none;
+color:white;
+}
+
+main{
+margin-top:50px;
+background-color: whitesmoke ;
+width: 100%;
+margin-bottom: 200px;
+}
+ /* Cookie */
+ #consent-popup{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: radial-gradient(#fff, #ffd6d6) ;
+    opacity: 1;
+    transition: opacity .8s ease;
+    max-height: 200px;
+  }
+  
+        #accept{
+        color: black;
+        padding: 8px 30px;
+        margin: 30px 0;
+        border-radius: 15px;
+        text-decoration: none;
+        background-color: yellow;
+        }
+        
+        .interaction{
+          display: inline-flex;
+          align-items: center;
+          max-height: fit-content;
+        
+        }
+        
+        .interaction a{
+          color: black;
+          padding-left: 50px;
+        }

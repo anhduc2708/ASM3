@@ -1,0 +1,256 @@
+
+  body {
+	font: 400 14px/1.6 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+	color: #4f4f5b;
+	background-color: #f7f7f7;
+	overflow-x: hidden;
+}
+
+.or {
+	height: 1px;
+	width: 100%;
+	background-color: #cdcdd2;
+	position: relative;
+	margin: 40px 0;
+}
+
+	.or:after {
+		display: block;
+		content: "OR";
+		position: absolute;
+		top: -9px;
+		font-size: 12px;
+		font-weight: 600;
+		color: #6f6f7f;
+		background-color: #f7f7f7;
+		padding: 0 30px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+.container_1 {
+	max-width: 970px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+main {
+	padding: 60px 0;
+}
+
+.thankyou {
+		margin-bottom: 35px;
+		text-align: center;
+	}
+
+.thankyou h1 {
+			font: 700 40px/1 'Merriweather', serif;
+			margin-bottom: 20px;
+		}
+
+.thankyou p {
+			font-size: 15px;
+		}
+
+/* Tuan part */
+    span {
+      content: "\2713";
+      font-size: 200px;
+      color: Green;
+    }
+
+/* footer and header */
+
+*{ margin: 5;}
+
+
+/* oderplacement main */
+main{
+background-color: whitesmoke;
+width: 100%;
+}
+
+
+footer {
+  background-color: black;
+  height: 100%;
+  clear: both;
+
+
+}
+* {
+box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+float: left;
+width: 25%;
+padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+opacity: 0.8;
+cursor: pointer;
+}
+
+.column img:hover {
+opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* The expanding image container */
+.container {
+position: relative;
+display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+position: absolute;
+bottom: 15px;
+left: 15px;
+color: white;
+font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+position: absolute;
+top: 10px;
+right: 15px;
+color: white;
+font-size: 35px;
+cursor: pointer;
+}
+
+header {
+  background-color: white;
+  height: 70px;
+  position: sticky;
+  top: 0;
+
+  text-align: center;
+}
+
+nav a{
+color: black;
+text-decoration: none;
+font-family: Dela Gothic One;
+font-size: 20px;
+padding: 7px 25px;
+display: inline-block;
+}
+
+header img{
+
+  float: left;
+position: sticky;
+top: 0;
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+footer h2{
+
+  color: white;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.column {
+float: left;
+width: 33.33%;
+padding: 10px;
+height: 100%;
+}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.footerlist li {
+list-style-type: none;
+text-align:center;
+
+
+}
+.footerlist li a{
+text-decoration: none;
+color: white;
+}
+
+/* button  */
+
+/* continue shopping and order now function button */
+.buy-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.buy-button:hover {background-color:gray;}
+
+.buy-button:active {
+  background-color: gray;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.buy-button a{
+  text-decoration: none;
+  color: white;
+
+}
+ /* Cookie */
+ #consent-popup{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: radial-gradient(#fff, #ffd6d6) ;
+  opacity: 1;
+  transition: opacity .8s ease;
+  max-height: 200px;
+}
+
+      #accept{
+      color: black;
+      padding: 8px 30px;
+      margin: 30px 0;
+      border-radius: 15px;
+      text-decoration: none;
+      background-color: yellow;
+      }
+      
+      .interaction{
+        display: inline-flex;
+        align-items: center;
+        max-height: fit-content;
+      
+      }
+      
+      .interaction a{
+        color: black;
+        padding-left: 50px;
+      }

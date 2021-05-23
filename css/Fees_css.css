@@ -1,0 +1,189 @@
+/* fees table */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+/* body */
+body {
+font: 400 14px/1.6 'Raleway', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+color: #4f4f5b;
+background-color: #f7f7f7;
+overflow-x: hidden;
+}
+main{
+  margin-bottom: 200px;
+  padding: 250px 0;
+}
+/* header and footer */
+* {
+  margin: 0;
+}
+header{
+top: 0;
+position: sticky;
+clear: both;
+background-color: whitesmoke ;
+}
+
+footer{
+background-color: black;
+clear:both;
+height: 100px;
+}
+
+.bottom-nav {
+  max-width: 1600px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.footer-content{
+  display: flex ;
+  justify-content: center;
+
+}
+
+.footer-item{
+  font-size: 20px;
+ list-style: none;
+ margin: 0 8px;
+ display: inline-block;
+ transition: transform 0.5s;
+ padding-top: 40px;
+}
+.footer-item a{
+  text-decoration: none;
+  color:white;
+  }
+.footer-item:hover{
+  transform: translateY(-5px);
+}
+.footer-descript{
+  color: white;
+ }
+ /* Navbar css */
+  .nav{
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .logo{
+    padding-left: 0;
+    margin: auto 16px;
+  }
+
+  .Nav-item{
+    font-size: 20px;
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  .Nav-item:hover{
+   transform: translateY(-5px);
+  }
+  .Nav-item a{
+   text-decoration: none;
+   color:#555;
+  }
+
+  .Searchbar{
+    flex: 1;
+  }
+ /* Cookie */
+ #consent-popup{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: radial-gradient(#fff, #ffd6d6) ;
+  opacity: 1;
+  transition: opacity .8s ease;
+  max-height: 200px;
+}
+
+      #accept{
+      color: black;
+      padding: 8px 30px;
+      margin: 30px 0;
+      border-radius: 15px;
+      text-decoration: none;
+      background-color: yellow;
+      }
+      
+      .interaction{
+        display: inline-flex;
+        align-items: center;
+        max-height: fit-content;
+      
+      }
+      
+      .interaction a{
+        color: black;
+        padding-left: 50px;
+      }
