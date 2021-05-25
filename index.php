@@ -15,7 +15,7 @@
   <header>
 
       <div class="nav">
-        <ul class="logo"><a href="index.html"><img src="Image/Malllogo.png" width="200px" ></a></ul>
+        <ul class="logo"><a href="index.php"><img src="Image/Malllogo.png" width="200px" ></a></ul>
 
         <ul class="Searchbar">
             <input type="search" id="search" placeholder="Search..." />
@@ -23,22 +23,22 @@
 
         <ul class="Nav-list">
             <li class="Nav-item">
-              <a href = 'About-us.html' title = "About us"> About us</a>
+              <a href = 'About-us.php' title = "About us"> About us</a>
             </li>
             <li class="Nav-item">
-              <a href = "Fees.html" title = "Fees ">Fees</a>
+              <a href = "Fees.php" title = "Fees ">Fees</a>
             </li>
             <li class="Nav-item">
-              <a href = "Contact.html" title = "Contact"> Contact</a>
+              <a href = "Contact.php" title = "Contact"> Contact</a>
             </li>
             <li class="Nav-item">
-              <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+              <a href = "FAQs.php" title = "FAQs"> FAQs</a>
             </li>
             <li class="Nav-item">
-              <a href = "Login.html" title = "Sign in"> Sign in</a>
+              <a href = "Login.php" title = "Sign in"> Sign in</a>
             </li>
             <li class="Nav-item">
-            <a href = "Registration form.html" title = "Sign up"> Sign up</a>
+            <a href = "Registration form.php" title = "Sign up"> Sign up</a>
             </li>
         </ul>
       </div>
@@ -70,36 +70,36 @@
 
           <div id="StoreScrolling" class="row">
           <div class="col-2">
-          <a href="Store home page.html"><img src="Image/nike.png"></a>
-          <div class="col-text"><a href="Store home page.html"><Strong>Nike</Strong></a></div>
+          <a href="Store home page.php"><img src="Image/nike.png"></a>
+          <div class="col-text"><a href="Store home page.php"><Strong>Nike</Strong></a></div>
 
 
 
         </div>
         <div  class="col-2">
-          <a href="Store home page.html"><img src="Image/Store logo - Copy.png"></a>
-          <div class="col-text"><a href="Store home page.html"><Strong>Sport Advance</Strong></a></div>
+          <a href="Store home page.php"><img src="Image/Store logo - Copy.png"></a>
+          <div class="col-text"><a href="Store home page.php"><Strong>Sport Advance</Strong></a></div>
         </div>
 
 
 
           <div  class="col-2">
-            <a href="Store home page.html"> <img src="Image/ananas.png"></a>
-            <div class="col-text"><a href="Store home page.html"><Strong>Ananas</Strong></a></div>
+            <a href="Store home page.php"> <img src="Image/ananas.png"></a>
+            <div class="col-text"><a href="Store home page.php"><Strong>Ananas</Strong></a></div>
           </div>
 
 
 
           <div  class="col-2">
-            <a href="Store home page.html"><img src="Image/LV.png"></a>
-            <div  class="col-text"><a href="Store home page.html"><Strong>Louis Vuitton</Strong></a></div>
+            <a href="Store home page.php"><img src="Image/LV.png"></a>
+            <div  class="col-text"><a href="Store home page.php"><Strong>Louis Vuitton</Strong></a></div>
           </div>
 
 
 
           <div  class="col-2">
-            <a href="Store home page.html"><img src="Image/adidas.png"></a>
-            <div class="col-text"><a href="Store home page.html"><Strong>Adidas</Strong></a></div>
+            <a href="Store home page.php"><img src="Image/adidas.png"></a>
+            <div class="col-text"><a href="Store home page.php"><Strong>Adidas</Strong></a></div>
           </div>
         </div>
       </div>
@@ -111,8 +111,8 @@
         <h2 class="title"> New Store </h2>
         <div class="row">
           <div class="col-2">
-            <a href="Store home page.html"><img src="Image/Gucci.png"></a>
-            <div class="col-text"><a href="Store home page.html"><Strong>Gucci</Strong></a></div>
+            <a href="Store home page.php"><img src="Image/Gucci.png"></a>
+            <div class="col-text"><a href="Store home page.php"><Strong>Gucci</Strong></a></div>
           </div>
       </div>
       </div>
@@ -122,33 +122,33 @@
       <h2 class="title"> Feature Products </h2>
       <div class="row">
         <div class="col-2">
-          <a href="detailpage.html"><img src="Image/cap1.png"></a>
+          <a href="detailpage.php"><img src="Image/cap1.png"></a>
           <div class="price"><Strong>500$</Strong></div>
-          <div class="col-text"><a href="Store home page.html"><Strong>Nike Fashion Hat</Strong></a></div>
+          <div class="col-text"><a href="Store home page.php"><Strong>Nike Fashion Hat</Strong></a></div>
 
         </div>
         <div class="col-2">
-          <a href="detailpage.html"><img src="Image/cap2.png"></a>
+          <a href="detailpage.php"><img src="Image/cap2.png"></a>
           <div class="price"><Strong>100$</Strong></div>
-          <div  class="col-text"><a href="Store home page.html"><Strong>Just Do It Hat</Strong></a></div>
+          <div  class="col-text"><a href="Store home page.php"><Strong>Just Do It Hat</Strong></a></div>
         </div>
 
         <div  class="col-2">
-          <a href="detailpage.html"><img src="Image/cap3.png"></a>
+          <a href="detailpage.php"><img src="Image/cap3.png"></a>
           <div class="price"><Strong>2000$</Strong></div>
-          <div class="col-text"><a href="Store home page.html"><Strong>Fly to Paris Hat</Strong></a></div>
+          <div class="col-text"><a href="Store home page.php"><Strong>Fly to Paris Hat</Strong></a></div>
 
         </div>
         <div class="col-2">
-          <a href="detailpage.html"><img src="Image/cap4.png"></a>
+          <a href="detailpage.php"><img src="Image/cap4.png"></a>
           <div class="price"><Strong>300$</Strong></div>
-          <div class="col-text"><a href="Store home page.html"><Strong>HD Hat</Strong></a></div>
+          <div class="col-text"><a href="Store home page.php"><Strong>HD Hat</Strong></a></div>
 
         </div>
         <div  class="col-2">
-          <a href="detailpage.html"><img src="Image/shoes3.png"></a>
+          <a href="detailpage.php"><img src="Image/shoes3.png"></a>
           <div class="price"><Strong>400$</Strong></div>
-          <div class="col-text"><a href="Store home page.html"><Strong>Nike HD Grade Edition</Strong></a></div>
+          <div class="col-text"><a href="Store home page.php"><Strong>Nike HD Grade Edition</Strong></a></div>
         </div>
       </div>
     </div>
@@ -158,19 +158,19 @@
       <h2 class="title"> New Products </h2>
       <div id="ProductScrolling" class="row">
           <div class="col-2">
-            <a href="detailpage.html"> <img src="Image/footballshoes4.png"></a>
+            <a href="detailpage.php"> <img src="Image/footballshoes4.png"></a>
             <div class="price"><Strong>120$</Strong></div>
-            <div class="col-text"><a href="Store home page.html"><Strong>Nike Mercurial Vapor 14 Academy IC</Strong></a></div>
+            <div class="col-text"><a href="Store home page.php"><Strong>Nike Mercurial Vapor 14 Academy IC</Strong></a></div>
           </div>
           <div class="col-2">
-            <a href="detailpage.html"> <img src="Image/shoes2.png"></a>
+            <a href="detailpage.php"> <img src="Image/shoes2.png"></a>
             <div class="price"><Strong>300$</Strong></div>
-            <div class="col-text"><a href="Store home page.html"><Strong>Nike Force</Strong></a></div>
+            <div class="col-text"><a href="Store home page.php"><Strong>Nike Force</Strong></a></div>
           </div>
           <div class="col-2">
-            <a href="detailpage.html"> <img src="Image/shoes1.png"></a>
+            <a href="detailpage.php"> <img src="Image/shoes1.png"></a>
             <div class="price"><Strong>400$</Strong></div>
-            <div class="col-text"><a href="Store home page.html"><Strong>Nike Jordan</Strong></a></div>
+            <div class="col-text"><a href="Store home page.php"><Strong>Nike Jordan</Strong></a></div>
           </div>
         </div>
       </div>
@@ -182,7 +182,7 @@
           <div class="interaction">
 
             <input type = "button" value ="I understand" class="popup" id="accept" >
-            <a href="private.html">Learn more</a>
+            <a href="private.php">Learn more</a>
 
           </div>
       </div>
@@ -194,22 +194,22 @@
       <div class = "footer-content">
         <ul>
           <li class="footer-item">
-            <a href = "index.html" title = "Home"> Home</a>
+            <a href = "index.php" title = "Home"> Home</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+            <a href = "FAQs.php" title = "FAQs"> FAQs</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "About-us.html" title = "About"> About</a>
+            <a href = "About-us.php" title = "About"> About</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "copyright.html" title = "Copyright"> Copyright</a>
+            <a href = "copyright.php" title = "Copyright"> Copyright</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "ToS.html" title = "Term"> Term of Service </a>
+            <a href = "ToS.php" title = "Term"> Term of Service </a>
           </li>
           <li class="footer-item">
-            <a href = "private.html" title = "Privacy Policy"> Privacy Policy</a>
+            <a href = "private.php" title = "Privacy Policy"> Privacy Policy</a>
           </li>
         </ul>
       </div>

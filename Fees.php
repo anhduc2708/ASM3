@@ -50,7 +50,7 @@
       <li><strong>Monthly Renting Fee:</strong> 987.789$</li>
       <li><strong>Monthly Parking:</strong> 100$</li>
       <li><strong>Daily Parking:</strong> 9.99$</li>
-      <li class="grey"><a href="Registration form.html" class="button">Sign Up</a></li>
+      <li class="grey"><a href="Registration form.php" class="button">Sign Up</a></li>
     </ul>
   </div>
   <!-- table_2 -->
@@ -61,7 +61,7 @@
     <li><strong>Monthly Renting Fee:</strong> 321.123$</li>
     <li><strong>Monthly Parking:</strong> 150$</li>
     <li><strong>Daily Parking:</strong> 15.99$</li>
-    <li class="grey"><a href="Registration form.html" class="button">Sign Up</a></li>
+    <li class="grey"><a href="Registration form.php" class="button">Sign Up</a></li>
   </ul>
 </div>
 <!-- table_3 -->
@@ -72,7 +72,7 @@
   <li><strong>Monthly Renting Fee:</strong> 123.321$</li>
   <li><strong>Monthy Parking:</strong> 120$</li>
   <li><strong>Daily Parking:</strong> 10.99$</li>
-  <li class="grey"><a href="Registration form.html" class="button">Sign Up</a></li>
+  <li class="grey"><a href="Registration form.php" class="button">Sign Up</a></li>
 </ul>
 </div>
 <div id="consent-popup" class="cookies">
@@ -81,7 +81,7 @@
     cookies and other technologies.</h3>
   <div class="interaction">
     <input type="button" value="I understand" class="popup" id="accept">
-    <a href="private.html">Learn more</a>
+    <a href="private.php">Learn more</a>
   </div>
 </div>
   </main>
@@ -94,22 +94,22 @@
       <div class = "footer-content">
         <ul>
           <li class="footer-item">
-            <a href = "index.html" title = "Home"> Home</a>
+            <a href = "index.php" title = "Home"> Home</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+            <a href = "FAQs.php" title = "FAQs"> FAQs</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "About-us.html" title = "About"> About</a>
+            <a href = "About-us.php" title = "About"> About</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "copyright.html" title = "Copyright"> Copyright</a>
+            <a href = "copyright.php" title = "Copyright"> Copyright</a>
           </li class="footer-item">
           <li class="footer-item">
-            <a href = "ToS.html" title = "Term"> Term of Service </a>
+            <a href = "ToS.php" title = "Term"> Term of Service </a>
           </li>
           <li class="footer-item">
-            <a href = "private.html" title = "Privacy Policy"> Privacy Policy</a>
+            <a href = "private.php" title = "Privacy Policy"> Privacy Policy</a>
           </li>
         </ul>
       </div>

@@ -74,7 +74,7 @@
       	</div>
 
       	<div class="productimg">
-      		<a target="_blank" href="detailpage.html">
+      		<a target="_blank" href="detailpage.php">
       		<img src="Image/shoes2.png" alt="Shoe">
       		</a>
       	<div class="prices">300$</div>
@@ -82,7 +82,7 @@
       	</div>
 
       	<div class="productimg">
-      		<a target="_blank" href="detailpage.html">
+      		<a target="_blank" href="detailpage.php">
       		<img src="Image/shoes1.png" alt="Shoe">
       		</a>
       	<div class="prices">400$</div>
@@ -90,7 +90,7 @@
       	</div>
 
       	<div class="productimg">
-      		<a target="_blank" href="detailpage.html">
+      		<a target="_blank" href="detailpage.php">
       		<img src="Image/shoes3.png" alt="Shoe">
       		</a>
       	<div class="prices">400$</div>
@@ -131,7 +131,7 @@
 
 
       <button class="button2" onclick="addItemtoCart(title,price,imageSrc)">ADD TO CART</button>
-      <button class="button2"><a href="Order placement.html" target="_blank" onclick="addItemtoCart(title,price,imageSrc)">BUY NOW</a></button>
+      <button class="button2"><a href="Order placement.php" target="_blank" onclick="addItemtoCart(title,price,imageSrc)">BUY NOW</a></button>
 
       <div class="Description">
         <h1> Description</h1>
@@ -180,7 +180,7 @@
     <h2>About Us</h2>
     <ul class ="footerlist">
 		<li><a href="Contact.php">Contact</a></li>
-		<li><a href="About-us.html">Careers</a></li>
+		<li><a href="About-us.php">Careers</a></li>
 	</ul>
   </div>
   <div class="column" >

@@ -164,14 +164,14 @@ footer{
       text-decoration: none;
       background-color: yellow;
       }
-      
+
       .interaction{
         display: inline-flex;
         align-items: center;
         max-height: fit-content;
-      
+
       }
-      
+
       .interaction a{
         color: black;
         padding-left: 50px;
@@ -184,7 +184,7 @@ footer{
   <header>
     <!-- Logo and navbar -->
     <div class="nav">
-      <ul class="logo"><a href="index.html"><img src="Image/Malllogo.png" width="200px" ></a></ul>
+      <ul class="logo"><a href="index.php"><img src="Image/Malllogo.png" width="200px" ></a></ul>
 
       <ul class="Searchbar">
           <input type="search" id="search" placeholder="Search..." />
@@ -192,22 +192,22 @@ footer{
 
       <ul class="Nav-list">
           <li class="Nav-item">
-            <a href = 'About-us.html' title = "About us"> About us</a>
+            <a href = 'About-us.php' title = "About us"> About us</a>
           </li>
           <li class="Nav-item">
-            <a href = "Fees.html" title = "Fees ">Fees</a>
+            <a href = "Fees.php" title = "Fees ">Fees</a>
           </li>
           <li class="Nav-item">
-            <a href = "Contact.html" title = "Contact"> Contact</a>
+            <a href = "Contact.php" title = "Contact"> Contact</a>
           </li>
           <li class="Nav-item">
-            <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+            <a href = "FAQs.php" title = "FAQs"> FAQs</a>
           </li>
           <li class="Nav-item">
-            <a href = "Login.html" title = "Sign in"> Sign in</a>
+            <a href = "Login.php" title = "Sign in"> Sign in</a>
           </li>
           <li class="Nav-item">
-          <a href = "Registration form.html" title = "Sign up"> Sign up</a>
+          <a href = "Registration form.php" title = "Sign up"> Sign up</a>
           </li>
       </ul>
     </div>
@@ -216,7 +216,7 @@ footer{
       </div>
     </header>
 	<main>
-<form method="get" action="index.html">
+<form method="get" action="index.php">
 	<div class="container">
 	  <section class="Forgot">
 
@@ -241,7 +241,7 @@ footer{
     cookies and other technologies.</h3>
   <div class="interaction">
     <input type="button" value="I understand" class="popup" id="accept">
-    <a href="private.html">Learn more</a>
+    <a href="private.php">Learn more</a>
   </div>
 </div>
 </body>
@@ -252,22 +252,22 @@ footer{
     <div class = "footer-content">
       <ul>
         <li class="footer-item">
-          <a href = "index.html" title = "Home"> Home</a>
+          <a href = "index.php" title = "Home"> Home</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+          <a href = "FAQs.php" title = "FAQs"> FAQs</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "About-us.html" title = "About"> About</a>
+          <a href = "About-us.php" title = "About"> About</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "copyright.html" title = "Copyright"> Copyright</a>
+          <a href = "copyright.php" title = "Copyright"> Copyright</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "ToS.html" title = "Term"> Term of Service </a>
+          <a href = "ToS.php" title = "Term"> Term of Service </a>
         </li>
         <li class="footer-item">
-          <a href = "private.html" title = "Privacy Policy"> Privacy Policy</a>
+          <a href = "private.php" title = "Privacy Policy"> Privacy Policy</a>
         </li>
 
       </ul>

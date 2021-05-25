@@ -99,7 +99,7 @@
     cookies and other technologies.</h3>
   <div class="interaction">
     <input type="button" value="I understand" class="popup" id="accept">
-    <a href="private.html">Learn more</a>
+    <a href="private.php">Learn more</a>
   </div>
 </div>
 </body>
@@ -111,22 +111,22 @@
     <div class = "footer-content">
       <ul>
         <li class="footer-item">
-          <a href = "index.html" title = "Home"> Home</a>
+          <a href = "index.php" title = "Home"> Home</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+          <a href = "FAQs.php" title = "FAQs"> FAQs</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "About-us.html" title = "About"> About</a>
+          <a href = "About-us.php" title = "About"> About</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "copyright.html" title = "Copyright"> Copyright</a>
+          <a href = "copyright.php" title = "Copyright"> Copyright</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "ToS.html" title = "Term"> Term of Service </a>
+          <a href = "ToS.php" title = "Term"> Term of Service </a>
         </li>
         <li class="footer-item">
-          <a href = "private.html" title = "Privacy Policy"> Privacy Policy</a>
+          <a href = "private.php" title = "Privacy Policy"> Privacy Policy</a>
         </li>
 
       </ul>
