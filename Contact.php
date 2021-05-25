@@ -135,7 +135,7 @@
           <a href = "About-us.php" title = "About"> About</a>
         </li class="footer-item">
         <li class="footer-item">
-          <a href = "copyright.html" title = "Copyright"> Copyright</a>
+          <a href = "copyright.php" title = "Copyright"> Copyright</a>
         </li class="footer-item">
         <li class="footer-item">
           <a href = "ToS.php" title = "Term"> Term of Service </a>

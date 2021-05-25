@@ -30,7 +30,7 @@ Souqcdn, view 11 April 2021, <https://cf5.s3.souqcdn.com/item/2020/07/10/13/15/2
 
 'Google Fonts' Google Fonts, viewed 14 April 2021, <https://fonts.google.com/>
 
-'Nike Products' Nike, viewed 12 April 2021, <https://www.nike.com/vn/> 
+'Nike Products' Nike, viewed 12 April 2021, <https://www.nike.com/vn/>
 
 CodingLab, “Responsive Registration Form in HTML &amp; CSS,” CodingLab, 27-Mar-2021. Accessed: 17-Apr-2021 [Online]. Available: https://www.codinglabweb.com/2021/01/responsive-registration-form-in-html-css.html.
 
@@ -60,4 +60,4 @@ w3resource.com, JavaScript: HTML Form - Phone Number validation, (Feb 26th 2020)
 
 Tyler H., StackOverflow.com, How can I require at least one checkbox be checked before a form can be submitted, (Oct 28th 2019). Accessed 2/5/2021 [Blogs]. Available: https://stackoverflow.com/questions/22238368/how-can-i-require-at-least-one-checkbox-be-checked-before-a-form-can-be-submitte?fbclid=IwAR3kAOPhmEMsk135hwo76EGcyZ5Dr9sbX3aJ9uFcUXz-82g2IDXhGli1TVo
 
-
+https://ecntt.com/

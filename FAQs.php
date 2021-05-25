@@ -13,7 +13,7 @@
 <header>
   <!-- Logo and navbar -->
   <div class="nav">
-    <ul class="logo"><a href="index.html"><img src="Image/Malllogo.png" width="200px" ></a></ul>
+    <ul class="logo"><a href="index.php"><img src="Image/Malllogo.png" width="200px" ></a></ul>
 
     <ul class="Searchbar">
         <input type="search" id="search" placeholder="Search..." />
@@ -21,22 +21,22 @@
 
     <ul class="Nav-list">
         <li class="Nav-item">
-          <a href = 'About-us.html' title = "About us"> About us</a>
+          <a href = 'About-us.php' title = "About us"> About us</a>
         </li>
         <li class="Nav-item">
-          <a href = "Fees.html" title = "Fees ">Fees</a>
+          <a href = "Fees.php" title = "Fees ">Fees</a>
         </li>
         <li class="Nav-item">
-          <a href = "Contact.html" title = "Contact"> Contact</a>
+          <a href = "Contact.php" title = "Contact"> Contact</a>
         </li>
         <li class="Nav-item">
-          <a href = "FAQs.html" title = "FAQs"> FAQs</a>
+          <a href = "FAQs.php" title = "FAQs"> FAQs</a>
         </li>
         <li class="Nav-item">
-          <a href = "Login.html" title = "Sign in"> Sign in</a>
+          <a href = "Login.php" title = "Sign in"> Sign in</a>
         </li>
         <li class="Nav-item">
-        <a href = "Registration form.html" title = "Sign up"> Sign up</a>
+        <a href = "Registration form.php" title = "Sign up"> Sign up</a>
         </li>
     </ul>
   </div>
