@@ -41,11 +41,12 @@
      <!-- test -->
      <div class="">
        <form action="admin_Data.php" method="post" >
-         
+
         Username: <input type="text" name="username"><br>
         Password: <input type="password" name="password"><br>
 
         Retype-Password: <input type="password" name="retype_password"><br>
+        
         <input type="submit" value="Submit" name="submit">
      </div>
 

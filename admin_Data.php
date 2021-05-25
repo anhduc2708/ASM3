@@ -1,3 +1,11 @@
+<?php
+$adUser = $_POST["username"];
+$cookie_value = $_POST["password"];
+$adPass = password_hash($cookie_value, PASSWORD_DEFAULT);
+setcookie($adUser, $adPass, time() + (86400 * 30), "/"); // 86400 = 1 day
+            // unlink("install.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,6 +14,43 @@
   </head>
 
   <body>
+
+    <?php
+    function check_password(){
+
+      if($password != $retype_password){
+        header("Refresh:0");
+      }
+      else {
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+          $name = $_REQUEST['username'];
+          $password = $_REQUEST['password'];
+          if(empty($name).empty($password)){
+            echo "empty";
+          }
+          else{
+            password_hash($password, PASSWORD_DEFAULT);
+            echo "name and pass";
+
+        }
+    }
+      }
+    }
+
+    check_password();
+
+    // $filename = 'install.php';
+    // $closeSystem = 'CLOSE';
+    //
+    // if (file_exists($filename)) {
+    //     echo "The file $filename exists";
+    //
+    // } else {
+    //     echo "The file $filename does not exist";
+    // }
+
+
+     ?>
 
     Welcome <?php echo $_POST["username"]; ?><br>
     Your name is: <?php echo $_POST["username"];?>
