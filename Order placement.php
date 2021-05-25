@@ -15,9 +15,9 @@
       <header>
         <img src="Image/Store logo.png" height="100%" width="150px"></img>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="Store home page.html">Products</a>
-            <a href="About-us.html">Contact Us</a>
+            <a href="index.php">Home</a>
+            <a href="Store home page.php">Products</a>
+            <a href="About-us.php">Contact Us</a>
           </nav>
     </header>
     <main>
@@ -68,8 +68,8 @@
               <span  id = "total" class = "total-price"> $0 </span>
             </p>
             <br>
-            <button class="buy-button"><a href="Store home page.html" target="_blank">CONTINUE SHOPPING</a></button>
-            <button id = "order-button" class="buy-button"><a href="Thank You.html" target="_blank">ORDER NOW</a></button>
+            <button class="buy-button"><a href="Store home page.php" target="_blank">CONTINUE SHOPPING</a></button>
+            <button id = "order-button" class="buy-button"><a href="Thank You.php" target="_blank">ORDER NOW</a></button>
           </div>
       </div>
       <div id="consent-popup" class="cookies">
@@ -78,7 +78,7 @@
           cookies and other technologies.</h3>
         <div class="interaction">
           <input type="button" value="I understand" class="popup" id="accept">
-          <a href="private.html">Learn more</a>
+          <a href="private.php">Learn more</a>
         </div>
       </div>
       </body>
@@ -90,27 +90,27 @@
   <div class="column">
     <h2>Products</h2>
     <ul>
-		<li><a href="Store home page.html">Shoe</a></li>
-		<li><a href="Store home page.html">Shirt</a></li>
-		<li><a href="Store home page.html">Short</a></li>
-		<li><a href="Store home page.html">Cap</a></li>
-		<li><a href="Store home page.html">Football Shoe</a></li>
+		<li><a href="Store home page.php">Shoe</a></li>
+		<li><a href="Store home page.php">Shirt</a></li>
+		<li><a href="Store home page.php">Short</a></li>
+		<li><a href="Store home page.php">Cap</a></li>
+		<li><a href="Store home page.php">Football Shoe</a></li>
 	</ul>
   </div>
   <div class="column" >
     <h2>About Us</h2>
     <ul>
-		<li><a href="About-us.html">Contact</a></li>
-		<li><a href="About-us.html">Careers</a></li>
+		<li><a href="About-us.php">Contact</a></li>
+		<li><a href="About-us.php">Careers</a></li>
 	</ul>
   </div>
   <div class="column" >
     <h2>Support</h2>
     <ul>
-		<li><a href="FAQs.html">FAQs</a></li>
+		<li><a href="FAQs.php">FAQs</a></li>
 		<li><a href="#">Delivery</a></li>
-		<li><a href="ToS.html">ToS</a></li>
-		<li><a href="Fees.html">Payment</a></li>
+		<li><a href="ToS.php">ToS</a></li>
+		<li><a href="Fees.php">Payment</a></li>
 	</ul>
   </div>
 </div>
