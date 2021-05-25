@@ -1,4 +1,3 @@
-
 <?php
   session_start();
 
@@ -8,11 +7,11 @@
 ?>
 
 <?php
-$adUser = $_POST["username"];
-$cookie_value = $_POST["password"];
-$adPass = password_hash($cookie_value, PASSWORD_DEFAULT);
-setcookie($adUser, $adPass, time() + (86400 * 30), "/"); // 86400 = 1 day
-            // unlink("install.php");
+// $adUser = $_POST["username"];
+// $cookie_value = $_POST["password"];
+// $adPass = password_hash($cookie_value, PASSWORD_DEFAULT);
+// setcookie($adUser, $adPass, time() + (86400 * 30), "/"); // 86400 = 1 day
+// // unlink("install.php");
 ?>
 
 <!DOCTYPE html>
