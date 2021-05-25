@@ -1,3 +1,12 @@
+
+<?php
+  session_start();
+
+  if (!isset($_SESSION['username'])) {
+    header('location: login.php');
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,9 +16,7 @@
 
   <body>
 
-    Welcome <?php echo $_POST["username"]; ?><br>
-    Your name is: <?php echo $_POST["username"];?>
-    Your password is: <?php echo $_POST["password"];?>
+    <h1>This is Dashboard Menu</h1>
 
   </body>
 

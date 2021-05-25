@@ -1,5 +1,14 @@
+<?php
+  session_start();
 
-
+  if (isset($_POST['submit'])) {
+    if (isset($_POST['password']) && $_POST['password'] == $_POST['repassword']) {
+      $_SESSION['username'] = $_POST['username'];
+      header('location: admin_Data.php');
+    }
+    $status = 'Invalid username/password';
+  }
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,45 +16,16 @@
     <title></title>
   </head>
   <body>
-    <?php
-
-    // function check_password(){
-    //   $password = $_REQUEST['password'];
-    //   $retype_password = $_REQUEST['retype_password'];
-    //   if($password != $retype_password){
-    //     header("Refresh:0");
-    //   }
-    //
-    //   else {
-    //     if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    //       $name = $_REQUEST['username'];
-    //       $password = $_REQUEST['password'];
-    //       if(empty($name).empty($password)){
-    //         echo "empty";
-    //       }
-    //       else{
-    //         password_hash($password, PASSWORD_DEFAULT);
-    //         echo "name and pass";
-    //         // unlink("install.php");
-    //     }
-    // }
-    //   }
-    // }
-    //
-    // check_password();
-
-
-     ?>
-
-
      <!-- test -->
      <div class="">
-       <form action="admin_Data.php" method="post" >
-         
+       <form method="post" action="install.php">
+
         Username: <input type="text" name="username"><br>
+
         Password: <input type="password" name="password"><br>
 
-        Retype-Password: <input type="password" name="retype_password"><br>
+        Retype-Password: <input type="password" name="repassword"><br>
+
         <input type="submit" value="Submit" name="submit">
      </div>
 
