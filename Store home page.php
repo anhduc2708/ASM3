@@ -186,9 +186,9 @@ main h2{
     <header>
       <img src="Image/Store logo.png" height="100%" width="150px"></img>
       <nav>
-          <a href="index.html">Home</a>
-          <a href="Store home page.html">Products</a>
-          <a href="About-us.html">Contact Us</a>
+          <a href="index.php">Home</a>
+          <a href="Store home page.php">Products</a>
+          <a href="About-us.php">Contact Us</a>
         </nav>
         <div>
         <label for="ProductBrowse">Browse Product:</label>
@@ -207,7 +207,7 @@ main h2{
     <main>
 	<h2>Shoes</h2>
     <div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/shoes4.png" alt="Shoe" height="100">
 		</a>
 	<div class="prices">250$</div>
@@ -215,7 +215,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/shoes2.png" alt="Shoe" height="400">
 		</a>
 	<div class="prices">300$</div>
@@ -223,7 +223,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/shoes1.png" alt="Shoe" height="400">
 		</a>
 	<div class="prices">400$</div>
@@ -231,7 +231,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/shoes3.png" alt="Shoe" height="400">
 		</a>
 	<div class="prices">400$</div>
@@ -240,7 +240,7 @@ main h2{
 
 	<h2>Shirt</h2>
 	 <div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/shirts1.png" alt="Shirt" width="500" height="400">
 		</a>
 	<div class="prices">100$</div>
@@ -248,7 +248,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/shirts2.png" alt="Shirt" width="600" height="400">
 		</a>
 	<div class="prices">50$</div>
@@ -256,7 +256,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/shirts3.png" alt="Shirt" width="600" height="400">
 		</a>
 	<div class="prices">200$</div>
@@ -264,7 +264,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/shirts4.png" alt="Shirt" width="600" height="400">
 		</a>
 	<div class="prices">400$</div>
@@ -273,7 +273,7 @@ main h2{
 
 	<h2>Short</h2>
 	 <div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/Short1.jpg" alt="Short" width="600" height="300px">
 		</a>
 	<div class="prices">50$</div>
@@ -281,7 +281,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/Short2.jpg" alt="Short" width="600" height="400">
 		</a>
 	<div class="prices">39$</div>
@@ -289,7 +289,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/Short3.jpg" alt="Short" width="600" height="400">
 		</a>
 	<div class="prices">49$</div>
@@ -297,7 +297,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/Short3.png" alt="Short" width="600" height="400">
 		</a>
 	<div class="prices">60$</div>
@@ -307,7 +307,7 @@ main h2{
 
 	<h2>Hat</h2>
 	 <div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/cap1.png" alt="Hat" width="600" height="400">
 		</a>
 	<div class="prices">500$</div>
@@ -315,7 +315,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/cap2.png" alt="Hat" width="600" height="400">
 		</a>
 	<div class="prices">100$</div>
@@ -323,7 +323,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/cap3.png" alt="Hat" width="600" height="400">
 		</a>
 	<div class="prices">2000$</div>
@@ -331,7 +331,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/cap4.png" alt="Hat" width="600" height="400">
 		</a>
 	<div class="prices">300$</div>
@@ -340,7 +340,7 @@ main h2{
 
 	<h2>Football Shoes</h2>
 	 <div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/footballshoes1.png" alt="Football Shoes" width="600" height="400">
 		</a>
 	<div class="prices">400$</div>
@@ -348,7 +348,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/footballshoes2.png" alt="Football Shoes" width="600" height="400">
 		</a>
 	<div class="prices">300$</div>
@@ -356,7 +356,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="detailpage.html">
+		<a target="_blank" href="detailpage.php">
 		<img src="Image/footballshoes3.png" alt="Football Shoes" width="600" height="400">
 		</a>
 	<div class="prices">100$</div>
@@ -364,7 +364,7 @@ main h2{
 	</div>
 
 	<div class="productimg">
-		<a target="_blank" href="Detailpage2.html">
+		<a target="_blank" href="Detailpage2.php">
 		<img src="Image/footballshoes4.png" alt="Football Shoes" width="600" height="400">
 		</a>
 	<div class="prices">120$</div>
@@ -385,27 +385,27 @@ main h2{
   <div class="column">
     <h2>Products</h2>
     <ul>
-		<li><a href="Store home page.html">Shoe</a></li>
-		<li><a href="Store home page.html">Shirt</a></li>
-		<li><a href="Store home page.html">Short</a></li>
-		<li><a href="Store home page.html">Cap</a></li>
-		<li><a href="Store home page.html">Football Shoe</a></li>
+		<li><a href="Store home page.php">Shoe</a></li>
+		<li><a href="Store home page.php">Shirt</a></li>
+		<li><a href="Store home page.php">Short</a></li>
+		<li><a href="Store home page.php">Cap</a></li>
+		<li><a href="Store home page.php">Football Shoe</a></li>
 	</ul>
   </div>
   <div class="column" >
     <h2>About Us</h2>
     <ul>
-		<li><a href="About-us.html">Contact</a></li>
-		<li><a href="About-us.html">Careers</a></li>
+		<li><a href="About-us.php">Contact</a></li>
+		<li><a href="About-us.php">Careers</a></li>
 	</ul>
   </div>
   <div class="column" >
     <h2>Support</h2>
     <ul>
-		<li><a href="FAQs.html">FAQs</a></li>
+		<li><a href="FAQs.php">FAQs</a></li>
 		<li><a href="#">Delivery</a></li>
-		<li><a href="ToS.html">ToS</a></li>
-		<li><a href="Fees.html">Payment</a></li>
+		<li><a href="ToS.php">ToS</a></li>
+		<li><a href="Fees.php">Payment</a></li>
 	</ul>
   </div>
 </div>
@@ -415,7 +415,7 @@ main h2{
       cookies and other technologies.</h3>
     <div class="interaction">
       <input type="button" value="I understand" class="popup" id="accept">
-      <a href="private.html">Learn more</a>
+      <a href="private.php">Learn more</a>
     </div>
   </div>
   <script type="text/javascript" src="js/cookie.js"></script>

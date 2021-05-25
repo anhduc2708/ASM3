@@ -1,11 +1,3 @@
-
-<?php 
-// $cookie_name = "user";
-// $cookie_password = "John Doe";
-// setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
-?>
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>

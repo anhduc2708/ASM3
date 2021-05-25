@@ -18,8 +18,8 @@
     <link rel="icon" type="image/png" href="Im">
       <img src="Image/Store logo.png" height="100%" width="150px"></img>
       <nav>
-          <a href="index.html">Home</a>
-          <a href="Store home page.html">Products</a>
+          <a href="index.php">Home</a>
+          <a href="Store home page.php">Products</a>
           <a href="#">Contact Us</a>
         </nav>
 
@@ -35,7 +35,7 @@
         <p>We've sent an order confirmation email to <strong>abc@gmail.com</strong></p>
         <p>We can't wait to meet you and your' do!</p>
         <br>
-        <button class="buy-button"><a href="Store home page.html" target="_blank">BACK TO STORE</a></button>
+        <button class="buy-button"><a href="Store home page.php" target="_blank">BACK TO STORE</a></button>
 
       </section>
     </div>
@@ -75,7 +75,7 @@
         cookies and other technologies.</h3>
       <div class="interaction">
         <input type="button" value="I understand" class="popup" id="accept">
-        <a href="private.html">Learn more</a>
+        <a href="private.php">Learn more</a>
       </div>
     </div>
   </div>
