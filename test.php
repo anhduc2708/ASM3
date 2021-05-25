@@ -9,12 +9,12 @@
       }
     };
   checkFile();
+  
   if (checkFile() == false) {
       echo "<h1>404 Error Connection</h1>";
       exit(test.php);
   }
   else {
-    echo "Hello";
   };
 
 ?>

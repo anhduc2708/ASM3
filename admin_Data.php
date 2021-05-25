@@ -1,18 +1,21 @@
 <?php
-  session_start();
 
-  if (!isset($_SESSION['username'])) {
-    header('location: install.php');
+      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $id = $_POST['username'];
+      $pass = $_POST['password'];
+      $repass = $_POST['repassword'];
+      if (empty($id).empty($pass).($pass != $repass)) {
+          header('location: install.php');
+      } else {
+        $adPass = password_hash($pass, PASSWORD_DEFAULT);
+        setcookie($id, $adPass, time() + (86400 * 30), "/");
+      }
   }
+
+
+
 ?>
 
-<?php
-// $adUser = $_POST["username"];
-// $cookie_value = $_POST["password"];
-// $adPass = password_hash($cookie_value, PASSWORD_DEFAULT);
-// setcookie($adUser, $adPass, time() + (86400 * 30), "/"); // 86400 = 1 day
-// // unlink("install.php");
-?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -23,7 +26,6 @@
 
   <body>
     <h1>This is Dashboard Menu</h1>
-
   </body>
 
 </html>

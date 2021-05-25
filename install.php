@@ -1,15 +1,3 @@
-<?php
-  session_start();
-
-  if (isset($_POST['submit'])) {
-    if (isset($_POST['password']) && $_POST['password'] == $_POST['repassword']) {
-      $_SESSION['username'] = $_POST['username'];
-      header('location: admin_Data.php');
-    }
-    $status = 'Invalid username/password';
-  }
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,8 +8,7 @@
      <!-- test -->
      <div class="">
 
-       <form method="post" action="install.php">
-
+       <form method="post" action="admin_Data.php">
 
         Username: <input type="text" name="username"><br>
 
