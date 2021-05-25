@@ -1,5 +1,4 @@
 <?php
-
     function checkFile()
     {
       $filename = 'install.php';
@@ -28,7 +27,6 @@
   </head>
   <body>
 
-<<<<<<< HEAD
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // collect value of input field
@@ -40,11 +38,9 @@
         }
     }
     ?>
-aaa
-=======
+
 
     <p>tuyet voi ong mat troi</p>
 
->>>>>>> 9c0f7f45c06762bdbbb84acb400e357c96df65c8
   </body>
 </html>

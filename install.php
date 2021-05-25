@@ -18,23 +18,18 @@
   <body>
      <!-- test -->
      <div class="">
-<<<<<<< HEAD
+
        <form method="post" action="install.php">
-=======
+
        <form action="admin_Data.php" method="post" >
->>>>>>> 9c0f7f45c06762bdbbb84acb400e357c96df65c8
+
 
         Username: <input type="text" name="username"><br>
 
         Password: <input type="password" name="password"><br>
 
-<<<<<<< HEAD
         Retype-Password: <input type="password" name="repassword"><br>
 
-=======
-        Retype-Password: <input type="password" name="retype_password"><br>
-        
->>>>>>> 9c0f7f45c06762bdbbb84acb400e357c96df65c8
         <input type="submit" value="Submit" name="submit">
      </div>
 
