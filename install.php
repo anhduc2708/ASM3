@@ -21,8 +21,6 @@
 
        <form method="post" action="install.php">
 
-       <form action="admin_Data.php" method="post" >
-
 
         Username: <input type="text" name="username"><br>
 
