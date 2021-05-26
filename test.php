@@ -1,22 +1,9 @@
 <?php
-    function checkFile()
-    {
-      $filename = 'install.php';
-      if (file_exists($filename)) {
-          return false;
-      } else {
-          return true;
-      }
-    };
-  checkFile();
-  
-  if (checkFile() == false) {
-      echo "<h1>404 Error Connection</h1>";
+  $filename = 'install.php';
+  if (file_exists($filename)) {
+      echo "<h1> 404 Error Connection </h1>";
       exit(test.php);
   }
-  else {
-  };
-
 ?>
 
 <!DOCTYPE html>
@@ -27,20 +14,11 @@
   </head>
   <body>
 
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // collect value of input field
-        $name = $_POST['username'];
-        if (empty($name)) {
-            echo "Name is empty";
-        } else {
-            echo $name;
-        }
-    }
-    ?>
-
-
     <p>tuyet voi ong mat troi</p>
+
+    <?php
+
+     ?>
 
   </body>
 </html>
