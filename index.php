@@ -62,7 +62,7 @@
 
   <div class="small-container">
     <h2>New Product</h2>
-      <ul  onmouseover="stop()" onmouseout="continuing()" id="ProductScrolling" id= "ProductScrolling">
+      <ul  onmouseover="stop()" onmouseout="continuing()" id="ProductScrolling">
 
         <li >
           <div class="gallery">

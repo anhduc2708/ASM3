@@ -49,24 +49,24 @@ function ContinueScrolling(){
     }
     else if (PositionCounter == 1){
       // qs("#StoreScrolling").style.marginleft = "-25%";
-      qs("#ProductScrolling").style.marginleft = "-25%";
+      qs("#ProductScrolling").style.marginleft = "-20%";
       PositionCounter++;
     }
     else if (PositionCounter ==2){
       // qs("#StoreScrolling").style.marginleft = "-25%";
-      qs("#ProductScrolling").style.marginleft = "-25%";
+      qs("#ProductScrolling").style.marginleft = "-20%";
       PositionCounter++;
     }
 
     else if (PositionCounter ==3){
       // qs("#StoreScrolling").style.marginleft = "-25%";
-      qs("#ProductScrolling").style.marginleft = "-25%";
+      qs("#ProductScrolling").style.marginleft = "-20%";
       PositionCounter++;
     }
 
     else if (PositionCounter ==4){
       // qs("#StoreScrolling").style.marginleft = "-25%";
-      qs("#ProductScrolling").style.marginleft = "-25%";
+      qs("#ProductScrolling").style.marginleft = "-20%";
       PositionCounter = 0;
     }
 
