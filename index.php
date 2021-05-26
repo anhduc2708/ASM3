@@ -107,6 +107,28 @@
           <div class="desc">Add a description of the image here</div>
           </div>
         </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+        
       </ul>
 
 

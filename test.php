@@ -10,11 +10,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+
+
+
   </head>
+
+  <style media="screen">
+
+    .test{
+
+    }
+
+  </style>
   <body>
 
-    <p>tuyet voi ong mat troi</p>
+    <div id="new">
+    <p id="p1">Tutorix</p>
+    <p id="p2">Tutorialspoint</p>
+    </div>
+
+
+
 
     <?php
 
@@ -133,8 +149,8 @@
       };
 
     };
-    
-    all_stores_function();
+
+    // all_stores_function();
 
 
 
@@ -144,4 +160,6 @@
     ?>
 
   </body>
+  <script src="Js/test.js"></script>
+
 </html>
