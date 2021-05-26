@@ -105,7 +105,6 @@
       </div>
 
 
-
 </ul>
       <div class="small-container">
         <h2 class="title"> New Store </h2>
