@@ -45,7 +45,7 @@
   </header>
 
 
-  <bod>
+  <body>
 
   <div class="large-container">
     <div class="row">
@@ -59,121 +59,13 @@
     </div>
     </div>
 
-
   <div>
 
-
-  <div class="small-container" >
-      <h2 class="title"> Feature Stores </h2>
-      <ul>
-
-
-          <div id="StoreScrolling" class="row">
-          <div class="col-2">
-          <a href="Store home page.php"><img src="Image/nike.png"></a>
-          <div class="col-text"><a href="Store home page.php"><Strong>Nike</Strong></a></div>
-
-
-
-        </div>
-        <div  class="col-2">
-          <a href="Store home page.php"><img src="Image/Store logo - Copy.png"></a>
-          <div class="col-text"><a href="Store home page.php"><Strong>Sport Advance</Strong></a></div>
-        </div>
-
-
-
-          <div  class="col-2">
-            <a href="Store home page.php"> <img src="Image/ananas.png"></a>
-            <div class="col-text"><a href="Store home page.php"><Strong>Ananas</Strong></a></div>
-          </div>
-
-
-
-          <div  class="col-2">
-            <a href="Store home page.php"><img src="Image/LV.png"></a>
-            <div  class="col-text"><a href="Store home page.php"><Strong>Louis Vuitton</Strong></a></div>
-          </div>
-
-
-
-          <div  class="col-2">
-            <a href="Store home page.php"><img src="Image/adidas.png"></a>
-            <div class="col-text"><a href="Store home page.php"><Strong>Adidas</Strong></a></div>
-          </div>
-        </div>
-      </div>
-
-
-</ul>
-      <div class="small-container">
-        <h2 class="title"> New Store </h2>
-        <div class="row">
-          <div class="col-2">
-            <a href="Store home page.php"><img src="Image/Gucci.png"></a>
-            <div class="col-text"><a href="Store home page.php"><Strong>Gucci</Strong></a></div>
-          </div>
-      </div>
-      </div>
-
-        <!-- Feature Product -->
-    <div class="small-container">
-      <h2 class="title"> Feature Products </h2>
-      <div class="row">
-        <div class="col-2">
-          <a href="detailpage.php"><img src="Image/cap1.png"></a>
-          <div class="price"><Strong>500$</Strong></div>
-          <div class="col-text"><a href="Store home page.php"><Strong>Nike Fashion Hat</Strong></a></div>
-
-        </div>
-        <div class="col-2">
-          <a href="detailpage.php"><img src="Image/cap2.png"></a>
-          <div class="price"><Strong>100$</Strong></div>
-          <div  class="col-text"><a href="Store home page.php"><Strong>Just Do It Hat</Strong></a></div>
-        </div>
-
-        <div  class="col-2">
-          <a href="detailpage.php"><img src="Image/cap3.png"></a>
-          <div class="price"><Strong>2000$</Strong></div>
-          <div class="col-text"><a href="Store home page.php"><Strong>Fly to Paris Hat</Strong></a></div>
-
-        </div>
-        <div class="col-2">
-          <a href="detailpage.php"><img src="Image/cap4.png"></a>
-          <div class="price"><Strong>300$</Strong></div>
-          <div class="col-text"><a href="Store home page.php"><Strong>HD Hat</Strong></a></div>
-
-        </div>
-        <div  class="col-2">
-          <a href="detailpage.php"><img src="Image/shoes3.png"></a>
-          <div class="price"><Strong>400$</Strong></div>
-          <div class="col-text"><a href="Store home page.php"><Strong>Nike HD Grade Edition</Strong></a></div>
-        </div>
-      </div>
-    </div>
-
-      <!-- New Product -->
-    <div class="small-container">
-      <h2 class="title"> New Products </h2>
-      <div id="ProductScrolling" class="row">
-          <div class="col-2">
-            <a href="detailpage.php"> <img src="Image/footballshoes4.png"></a>
-            <div class="price"><Strong>120$</Strong></div>
-            <div class="col-text"><a href="Store home page.php"><Strong>Nike Mercurial Vapor 14 Academy IC</Strong></a></div>
-          </div>
-          <div class="col-2">
-            <a href="detailpage.php"> <img src="Image/shoes2.png"></a>
-            <div class="price"><Strong>300$</Strong></div>
-            <div class="col-text"><a href="Store home page.php"><Strong>Nike Force</Strong></a></div>
-          </div>
-          <div class="col-2">
-            <a href="detailpage.php"> <img src="Image/shoes1.png"></a>
-            <div class="price"><Strong>400$</Strong></div>
-            <div class="col-text"><a href="Store home page.php"><Strong>Nike Jordan</Strong></a></div>
-          </div>
-        </div>
-      </div>
+  <div class="small-container">
+    <h1> ready for test </h1>
   </div>
+
+
 
       <div id="consent-popup" class="cookies">
         <H1>I uses Cookie</H1>
@@ -185,6 +77,7 @@
 
           </div>
       </div>
+
   </body>
 
   <footer>
