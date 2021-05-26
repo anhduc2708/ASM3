@@ -9,6 +9,7 @@
       } else {
         $adPass = password_hash($pass, PASSWORD_DEFAULT);
         setcookie($id, $adPass, time() + (86400 * 30), "/");
+        unlink("install.php");
       }
   }
 
