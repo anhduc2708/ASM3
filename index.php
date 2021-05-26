@@ -57,12 +57,59 @@
         <img src="Image/mall.png">
       </div>
     </div>
+
     </div>
 
-  <div>
-
   <div class="small-container">
-    <h1> ready for test </h1>
+    <h2>New Product</h2>
+      <ul  onmouseover="stop()" onmouseout="continuing()" id="ProductScrolling" id= "ProductScrolling">
+
+        <li >
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap3.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap2.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap4.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+
+        <li>
+          <div class="gallery">
+          <img src="Image/cap1.png" alt="Shoe" width="200px" height="200px">
+          <div class="desc">Add a description of the image here</div>
+          </div>
+        </li>
+      </ul>
+
+
+
+
   </div>
 
 
