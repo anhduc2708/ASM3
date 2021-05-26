@@ -15,21 +15,14 @@
 
   </head>
 
-  <style media="screen">
-
-    .test{
-
-    }
-
-  </style>
   <body>
-
+<!--
     <div id="new">
     <p id="p1">Tutorix</p>
     <p id="p2">Tutorialspoint</p>
     </div>
 
-
+ -->
 
 
     <?php
