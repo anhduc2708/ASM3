@@ -37,7 +37,7 @@
     // echo '</pre>';
 
 
-    echo count(read_all_products());
+    // echo count(read_all_products());
 
     function time_arr(){
       $time_arr= [];
@@ -50,20 +50,20 @@
       return $time_arr;
     };
 
+// sort time
     function sort_arr(){
-      $abs_arr = [];
-      for ($i=0; $i < count(read_all_products()); $i++) {
-        $abs_arr[$i] = abs(time_arr()[$i]);
+      $result = [];
+      $coppy_arr = time_arr();
+      for ($i=0; $i < count($coppy_arr); $i++) {
+        $result[$i] = abs($coppy_arr[$i]);
       }
-      // $coppy_arr = time_arr();
-      sort($abs_arr);
-      // $result = abs($coppy_arr);
-      return $abs_arr;
-    }
+      sort($result);
+      return $result;
+    };
 
-    echo '<pre>';
-    var_dump(sort_arr());
-    echo '</pre>';
+    // echo '<pre>';
+    // var_dump(sort_arr());
+    // echo '</pre>';
 
 
     function get_product($product_id) {
@@ -75,6 +75,16 @@
       }
       return false;
     };
+
+    // test to print result
+    $id_array = [1, 3, 4, 6, 12];
+    for ($i=0; $i < count($id_array); $i++) {
+      $num_id = $id_array[$i];
+      echo '<pre>';
+      var_dump(get_product($num_id));
+      echo '</pre>';
+    };
+
 
 
      ?>
