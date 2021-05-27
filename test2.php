@@ -31,32 +31,40 @@
       }
       return $products;
     }
+
+    // echo '<pre>';
+    // var_dump(read_all_products());
+    // echo '</pre>';
+
+
+    echo count(read_all_products());
+
+    function time_arr(){
+      $time_arr= [];
+      for ($i=0; $i < count(read_all_products()); $i++) {
+        $time_selected = read_all_products()[$i]["created_time"];
+        $new_time_selected = str_replace("Z","",$time_selected);
+        $time_product = time() - strtotime($new_time_selected);
+        $time_arr[$i] = $time_product;
+      }
+      return $time_arr;
+    };
+
+    function sort_arr(){
+      $abs_arr = [];
+      for ($i=0; $i < count(read_all_products()); $i++) {
+        $abs_arr[$i] = abs(time_arr()[$i]);
+      }
+      // $coppy_arr = time_arr();
+      sort($abs_arr);
+      // $result = abs($coppy_arr);
+      return $abs_arr;
+    }
+
     echo '<pre>';
-    var_dump(read_all_products());
+    var_dump(sort_arr());
     echo '</pre>';
 
-
-    $counts=0;
-    $count_string = 0;
-    $time_cal= [];
-    $time_sort=[];
-    while(read_all_products()[$counts]["created_time"]){
-      $time_selected = read_all_products()[$counts++]["created_time"];
-      $new_time_selected = str_replace("Z","",$time_selected);
-      $time_product = time()-strtotime($new_time_selected);
-      $time_sort= array($time_product);
-      $result= array_merge($time_cal,$time_sort);
-      echo '<pre>';
-      // print_r ($new_time_selected). '<br>';
-      // echo $time_product. '<br>';
-      var_dump ($result). '<br>';
-      echo '</pre>';
-      $counts++;
-      if($counts == 999){
-        break;
-      }
-
-    }
 
     function get_product($product_id) {
       $products = read_all_products();
@@ -66,9 +74,8 @@
         }
       }
       return false;
-    }
+    };
 
-    echo time();
 
      ?>
 
