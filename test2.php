@@ -31,6 +31,11 @@
       }
       return $products;
     }
+    echo '<pre>';
+    var_dump(read_all_products());
+    echo '</pre>';
+
+
     $counts=0;
     $count_string = 0;
     $time_cal= [];
