@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title> About Us</title>
+  <title> About Usa</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/About-us.css">
   <meta name="viewport" content="width = device-width, initial-scale = 1">
@@ -61,7 +61,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close">×</span>
     <p>Duc's Hobby is doing gym and playing badminton. </p>
   </div>
   </div>
@@ -82,7 +82,7 @@
 
   <!-- Modal content -->
   <div class="modal-content1">
-    <span class="close1">&times;</span>
+    <span class="close1">×</span>
     <p>He was born to play football. He also love to sing but his voice was bad.</p>
   </div>
   </div>
@@ -103,7 +103,7 @@
 
     <!-- Modal content -->
     <div class="modal-content2">
-    <span class="close2">&times;</span>
+    <span class="close2">×</span>
     <p> Duan loves to read about coding. He also loves to help the others if the problem is in his ability.</p>
     </div>
     </div>
@@ -123,7 +123,7 @@
 
     <!-- Modal content -->
     <div class="modal-content3">
-    <span class="close3">&times;</span>
+    <span class="close3">×</span>
     <p>He always try his best in working as a group. He is a hard working person. He always covers his teammates.</p>
     </div>
     </div>
