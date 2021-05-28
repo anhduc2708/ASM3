@@ -1,6 +1,7 @@
 <?php
 
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST"){
       $id = $_POST['username'];
       $pass = $_POST['password'];
       $repass = $_POST['repassword'];
@@ -10,9 +11,14 @@
         $adPass = password_hash($pass, PASSWORD_DEFAULT);
         setcookie($id, $adPass, time() + (86400 * 30), "/");
         // unlink("install.php");
-      }
-  }
 
+      };
+    };
+
+    // $filename = "install.php";
+    // if (file_exists($filename)) {
+    //     echo "<h1> 404 Error Connection </h1>";
+    //     exit(admin_Data.php);}
 ?>
 
 <?php
