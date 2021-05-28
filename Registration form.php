@@ -47,6 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $passwordmemberError = "Password is required";
   } else {
     $passwordmember= test_input($_POST["password_member"]);
+    $passwordhash= password_hash($passwordmember, PASSWORD_DEFAULT);
   }
 
   if (empty($_POST["address"])) {
@@ -259,12 +260,15 @@ function test_input($data) {
   echo $username. "<br>";
   echo $phone_number. "<br>";
   echo $address. "<br>";
-  echo $passwordmember. "<br>";
+  echo $passwordhash. "<br>";
   echo $city. "<br>";
   echo $zipcode. "<br>";
   echo $CountryCode. "<br>";
 
-
+  $data_array= [$name, $email, $username, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode];
+  $memberfile= fopen("Admin_Save_Data\Member_data.txt","w");
+  fwrite($memberfile, var_export($data_array, true));
+  fclose($memberfile);
 
   ?>
 
