@@ -15,6 +15,8 @@
   <body>
 
     <?php
+
+// add all detail
     function read_all_products() {
       $file_name = 'products.csv';
       $fp = fopen($file_name, 'r');
@@ -50,7 +52,7 @@
       return $time_arr;
     };
 
-// sort time
+// sort the arry time
     function sort_arr(){
       $result = [];
       $coppy_arr = time_arr();
@@ -66,6 +68,10 @@
     // echo '</pre>';
 
 
+
+
+
+// final part
     function get_product($product_id) {
       $products = read_all_products();
       foreach ($products as $p) {
@@ -76,7 +82,8 @@
       return false;
     };
 
-    // test to print result
+
+// test to print result
     $id_array = [1, 3, 4, 6, 12];
     for ($i=0; $i < count($id_array); $i++) {
       $num_id = $id_array[$i];

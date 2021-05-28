@@ -145,7 +145,14 @@
 
     // all_stores_function();
 
-
+    // // test to print result
+    // $id_array = [1, 3, 4, 6, 12];
+    // for ($i=0; $i < count($id_array); $i++) {
+    //   $num_id = $id_array[$i];
+    //   echo '<pre>';
+    //   var_dump(get_product($num_id));
+    //   echo '</pre>';
+    // };
 
 
 
