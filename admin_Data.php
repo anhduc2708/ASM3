@@ -90,6 +90,10 @@
 <textarea name="private_content" id="private_content" style="width:100%;" rows="20"><?php echo $private_html; ?></textarea>
 <input type="submit" value="Save this file">
 </form>
+<br>
+
+<button type="button" name="button"><a href="index.php">HomePage</a></button>
+
   </body>
 
 </html>
