@@ -1,3 +1,89 @@
+<?php
+// define variables and set to empty values
+$nameError= $emailError= $usernameError= "";
+$phone_numberError= $passwordmemberError= $addressError= "";
+$cityError= $zipcodeError= $CountryCodeError= "";
+
+$name= $email= $username= "";
+$phone_number= $passwordmember= $address= "";
+$city= $zipcode= $CountryCode= "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameError= "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr= "Only letters and white space allowed";
+    }
+  }
+
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email= test_input($_POST["email"]);
+  }
+
+  if (empty($_POST["username"])) {
+    $usernameError = "Username is required";
+  } else {
+    $username= test_input($_POST["username"]);
+  }
+
+  if (empty($_POST["phone_number"])) {
+    $phone_numberError = "Phone Number is required";
+  } else {
+    $phone_number= test_input($_POST["phone_number"]);
+  }
+
+  if (empty($_POST["phone_number"])) {
+    $phone_numberError = "Phone Number is required";
+  } else {
+    $phone_number= test_input($_POST["phone_number"]);
+  }
+
+  if (empty($_POST["password_member"])) {
+    $passwordmemberError = "Password is required";
+  } else {
+    $passwordmember= test_input($_POST["password_member"]);
+  }
+
+  if (empty($_POST["address"])) {
+    $addressError = "Address is required";
+  } else {
+    $address= test_input($_POST["address"]);
+  }
+
+  if (empty($_POST["city"])) {
+    $cityError = "city is required";
+  } else {
+    $city= test_input($_POST["city"]);
+  }
+
+  if (empty($_POST["zipcode"])) {
+    $zipcodeError = "zipcode is required";
+  } else {
+    $zipcode= test_input($_POST["zipcode"]);
+  }
+
+  if (empty($_POST["countrycode"])) {
+    $CountryCodeError = "countrycode is required";
+  } else {
+    $CountryCode= test_input($_POST["countrycode"]);
+  }
+
+
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
      <head>
@@ -51,48 +137,57 @@
         <div class="title"> Sign Up Form</div>
 
         <div class="content">
-          <form>
+          <form method="post" action="Registration form.php">
 
             <div class="user-details">
               <div class="input-box">
                 <span class="details">Full Name</span>
-                <input type="text" id = "name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter your name" name= "name" value="<?php echo $name;?>"><span class="error">* <?php echo $nameError;?></span>
               </div>
+
               <div class="input-box">
                 <span class="details">Username</span>
-                <input type="text" id = "username" placeholder="Enter your username">
+                <input type="text" id = "username" placeholder="Enter your username" name="username" value="<?php echo $username;?>"><span class="error">* <?php echo $usernameError;?></span>
               </div>
+
               <div class="input-box">
                 <span class="details">Email</span>
-                <input type="text" id = "email" placeholder="Enter your email">
+                <input type="text" id = "email" placeholder="Enter your email" name="email" value="<?php echo $email; ?>"><span class="error">* <?php echo $emailError;?></span>
               </div>
+
               <div class="input-box">
                 <span class="details">Phone Number</span>
-                <input type="text" id = "phone" placeholder="Enter your number">
+                <input type="text" id = "phone" placeholder="Enter your number" name="phone_number" value="<?php echo $phone_number; ?>"><span class="error">* <?php echo $phone_numberError;?></span>
               </div>
+
               <div class="input-box">
                 <span class="details">Password</span>
-                <input type="password" id = "pw" placeholder="Enter your password">
+                <input type="password" id = "pw" placeholder="Enter your password" name="password_member" value="<?php echo $passwordmember; ?>"><span class="error">* <?php echo $passwordmemberError;?></span>
               </div>
+
               <div class="input-box">
                 <span class="details">Confirm Password</span>
                 <input type="password" id = "check_pw" placeholder="Confirm your password">
               </div>
+
               <div class = "input-box">
                 <span class = "details"> Address </span>
-                <input type = "text" id = "address" placeholder="Enter your address">
+                <input type = "text" id = "address" placeholder="Enter your address" name="address" value="<?php echo $address; ?>"><span class="error">* <?php echo $addressError;?></span>
               </div>
+
               <div class = "input-box">
                 <span class = "details"> City </span>
-                <input type = "text" id = "city" placeholder="Enter your city name">
+                <input type = "text" id = "city" placeholder="Enter your city name" name="city" value="<?php echo $city; ?>"><span class="error">* <?php echo $cityError;?></span>
               </div>
+
               <div class = "input-box">
                 <span class = "details"> Zipcode </span>
-                <input type = "text" id = "zipcode" placeholder="Enter your zipcode (number)">
+                <input type = "text" id = "zipcode" placeholder="Enter your zipcode (number)" name="zipcode" value="<?php echo $zipcode; ?>"><span class="error">* <?php echo $zipError;?></span>
               </div>
+
               <div class = "input-box">
                 <span class = "details"> Country Code </span>
-                <input type = "text" id = "code" placeholder="Enter your country code (only 2 number)">
+                <input type = "text" id = "code" placeholder="Enter your country code (only 2 number)" name="countrycode" value="<?php echo $CountryCode; ?>"><span class="error">* <?php echo $CountryCodeError;?></span>
               </div>
 
             <!-- STORE OWNER INPUT  -->
@@ -157,6 +252,21 @@
     </section>
   </div>
 
+  <?php
+  echo "<h2>Your Input:</h2>";
+  echo $name. "<br>";
+  echo $email. "<br>";
+  echo $username. "<br>";
+  echo $phone_number. "<br>";
+  echo $address. "<br>";
+  echo $passwordmember. "<br>";
+  echo $city. "<br>";
+  echo $zipcode. "<br>";
+  echo $CountryCode. "<br>";
+
+
+
+  ?>
 
 
   <div id="consent-popup" class="cookies">

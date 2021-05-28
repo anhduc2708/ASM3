@@ -1,59 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>
+
 <?php
-   $About_us_edit = "About-us.php";
-   $file_html = file_get_contents($About_us_edit);
-   $file_html = htmlentities($file_html, ENT_QUOTES);
-   // echo $file_html;
+// define variables and set to empty values
+$nameError= $emailError= $uesrnameError= "";
+$phone_numberError= $passwordmemberError= $addressError "";
+$cityError= $zipcodeError= $CountryCodeError= "";
 
-   $Tos_edit = "ToS.php";
-   $file_html1 = file_get_contents($Tos_edit);
-   $file_html1 = htmlentities($file_html1, ENT_QUOTES);
+$name= $email= $username "";
+$phone_number= $passwordmember= $address "";
+$city= $zipcode= $CountryCode= "";
 
-   $copyright = "copyright.php";
-   $file_html2 = file_get_contents($Tos_edit);
-   $file_html2 = htmlentities($file_html2, ENT_QUOTES);
-
-   $private = "private.php";
-   $file_html3 = file_get_contents($private);
-   $file_html3 = htmlentities($file_html3, ENT_QUOTES);
-?>
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-    function encode_content(){
-    var content = document.getElementById('file_content').value;
-    document.getElementById('file_content').value = encodeURIComponent(content);
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameError= "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr= "Only letters and white space allowed";
+    }
   }
 
-  </script>
-  </head>
-  <body>
-    <h2>About-us Editing</h2>
-    <form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-    <textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html; ?></textarea>
-    <input type="submit" value="Save this file">
-  </form>
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email= test_input($_POST["email"]);
+  }
 
-  <h2>ToS Editing</h2>
-  <form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-  <textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html1; ?></textarea>
-  <input type="submit" value="Save this file">
+  if (empty($_POST["username"])) {
+    $usernameError = "Username is required";
+  } else {
+    $username= test_input($_POST["username"]);
+  }
+
+  if (empty($_POST["phone_number"])) {
+    $phone_numberError = "Phone Number is required";
+  } else {
+    $phone_number= test_input($_POST["phone_number"]);
+  }
+
+  if (empty($_POST["phone_number"])) {
+    $phone_numberError = "Phone Number is required";
+  } else {
+    $phone_number= test_input($_POST["phone_number"]);
+  }
+
+  if (empty($_POST["password_member"])) {
+    $passwordmemberError = "Password is required";
+  } else {
+    $passwordmember= test_input($_POST["password_member"]);
+  }
+
+  if (empty($_POST["address"])) {
+    $addressError = "Address is required";
+  } else {
+    $address= test_input($_POST["address"]);
+  }
+
+  if (empty($_POST["city"])) {
+    $cityError = "city is required";
+  } else {
+    $city= test_input($_POST["city"]);
+  }
+
+  if (empty($_POST["zipcode"])) {
+    $zipcodeError = "zipcode is required";
+  } else {
+    $zipcode= test_input($_POST["zipcode"]);
+  }
+
+  if (empty($_POST["countrycode"])) {
+    $CountryCodeError = "countrycode is required";
+  } else {
+    $CountryCode= test_input($_POST["countrycode"]);
+  }
+
+
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form Validation Example</h2>
+
+<p><span class="error">* required field</span></p>
+
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>
+
+  E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+  <span class="error">* <?php echo $emailErr;?></span>
+  <br><br>
+
+
+  <input type="submit" name="submit" value="Submit">
 </form>
 
-<h2>Copyright Editing</h2>
-<form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-<textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html2; ?></textarea>
-<input type="submit" value="Save this file">
-</form>
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
 
-<h2>Private Editing</h2>
-<form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-<textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html3; ?></textarea>
-<input type="submit" value="Save this file">
-</form>
-  </body>
 
+?>
+
+</body>
 </html>
