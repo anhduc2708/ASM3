@@ -186,20 +186,18 @@
       // echo '</pre>'
 
     // final part
-    function display_information($id_array){
-      // test to print result
-    for ($i=0; $i < count($id_array); $i++) {
-          $num_id = $id_array[$i];
-          echo '<pre>';
-          var_dump(get_product($num_id));
-          echo '</pre>';
-          };
+    function display_information($array){
+      for ($i=0; $i < count($array); $i++) {
+        $display = $array[$i];
+        // echo $array[$i]. "<br>";
+        echo "<p> $display <p>";
+      }
     };
-    echo new_stores_arr()[0];
+
     ?>
 
     <div id="replace" >
-    <h2> <?php echo new_stores_arr()[0]; ?></h2>
+    <p> <?php display_information(new_stores_arr()); ?> <p>
     <button onclick="create_ID()"> TEST</button>
     </div>
 
