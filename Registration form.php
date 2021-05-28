@@ -182,7 +182,7 @@ function test_input($data) {
 
               <div class = "input-box">
                 <span class = "details"> Zipcode </span>
-                <input type = "text" id = "zipcode" placeholder="Enter your zipcode (number)" name="zipcode" value="<?php echo $zipcode; ?>"><span class="error">* <?php echo $zipError;?></span>
+                <input type = "text" id = "zipcode" placeholder="Enter your zipcode (number)" name="zipcode" value="<?php echo $zipcode; ?>"><span class="error">* <?php echo $zipcodeError;?></span>
               </div>
 
               <div class = "input-box">
