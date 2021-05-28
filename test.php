@@ -14,6 +14,9 @@
 
 
   </head>
+<style media="screen">
+
+</style>
 
   <body>
     <?php
@@ -61,7 +64,7 @@
 
         $result = [];
         for ($i=0; $i < 10; $i++) {
-            $result[$i] = $all_products_infor[$i];
+            $result[$i] = [$all_products_infor[$i]['name'],$all_products_infor[$i]['price']];
         }
         return $result;
 
@@ -90,7 +93,7 @@
         $all_products_arr = read_all_products();
         $result = [];
         for ($i=0; $i <10; $i++) {
-          $result[$i] = $all_products_arr[$id_all_products[$i] - 1];
+          $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price']];
         }
         return $result;
       };
@@ -144,7 +147,7 @@
 
         $result = [];
         for ($i=0; $i < 10; $i++) {
-            $result[$i] = $all_stores_infor[$i];
+            $result[$i] = $all_stores_infor[$i]['name'];
         }
         return $result;
       };
@@ -173,24 +176,18 @@
         $all_stores_arr = read_all_stores();
         $result = [];
         for ($i=0; $i <10; $i++) {
-          $result[$i] = $all_stores_arr[$id_all_stores[$i] - 1];
+          $result[$i] = $all_stores_arr[$id_all_stores[$i] - 1]['name'];
         }
         return $result;
       };
 
       // echo '<pre>';
       // var_dump(new_stores_arr());
-      // echo '</pre>';
-
-
-
-
-
+      // echo '</pre>'
 
     // final part
     function display_information($id_array){
       // test to print result
-    $id_array = [1, 3, 4, 6, 12];
     for ($i=0; $i < count($id_array); $i++) {
           $num_id = $id_array[$i];
           echo '<pre>';
@@ -198,12 +195,16 @@
           echo '</pre>';
           };
     };
-
-
-
+    echo new_stores_arr()[0];
     ?>
 
+    <div id="replace" >
+    <h2> <?php echo new_stores_arr()[0]; ?></h2>
+    <button onclick="create_ID()"> TEST</button>
+    </div>
+
   </body>
-  <script src="Js/test.js"></script>
+  <!-- <script src="Js/test.js"></script> -->
+
 
 </html>
