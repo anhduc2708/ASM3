@@ -74,7 +74,7 @@
   </form>
 
   <h2>ToS Editing</h2>
-  <form name="edit_form" method="post" action="save_Tos.php" onsubmit="ToS_encode_content()">
+  <form name="edit_form" method="post" action="Admin_Save_Data/save_Tos.php" onsubmit="ToS_encode_content()">
   <textarea name="ToS_content" id="ToS_content" style="width:100%;" rows="20"><?php echo $ToS_html; ?></textarea>
   <input type="submit" value="Save this file">
 </form>
