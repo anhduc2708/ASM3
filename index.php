@@ -228,21 +228,23 @@
 
 // final part
 function display_stores($array){
+  $stores_logo = ['Image/adidas.png','Image/ananas.png','Image/bitis.png','Image/chanel.png','Image/gucci.png','Image/LV.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png',];
   for ($i=0; $i <count($array); $i++) {
     $display = $array[$i];
     echo " <li>
-            <a href='Store home page.php'> <img src='Image/ananas.png' alt='Shoe' width='150px' height='200px'> </a>
+            <a href='Store home page.php'> <img src='$stores_logo[$i]' alt='Shoe' width='150px' height='200px'> </a>
             <div class='infor'> $display </div>
            </li>";
   }
 };
 
 function display_product($array){
+  $product_img = ['Image/cap1.png', 'Image/cap2.png', 'Image/cap3.png', 'Image/cap4.png', 'Image/footballshoes1.png', 'Image/footballshoes2.png', 'Image/footballshoes3.png', 'Image/footballshoes4.png', 'Image/shirts1.png', 'Image/shirts2.png'];
   for ($i=0; $i <count($array); $i++) {
     $display_name = $array[$i][0];
     $display_price = $array[$i][1];
     echo " <li>
-            <a href='detailpage.php'> <img src='Image/cap2.png' alt='Shoe' width='150px' height='200px'> </a>
+            <a href='detailpage.php'> <img src='$product_img[$i]' alt='Shoe' width='150px' height='200px'> </a>
             <div class='infor'> $display_name </div>
             <div class='infor'> $display_price$</div>
            </li>";
