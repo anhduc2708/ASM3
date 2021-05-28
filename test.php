@@ -57,17 +57,18 @@
           }
         };
 
+        $all_products_infor = array_values($featured_products_arr);
+
         $result = [];
         for ($i=0; $i < 10; $i++) {
-            $result[$i] = $featured_products_arr[$i];
+            $result[$i] = $all_products_infor[$i];
         }
-        // // return $result;
-        return $featured_products_arr;
-      };
+        return $result;
 
-      echo '<pre> ';
-      var_dump(featured_products_arr())."<br>";
-      echo '</pre> ';
+      };
+      // echo '<pre> ';
+      // var_dump(featured_products_arr())."<br>";
+      // echo '</pre> ';
 
 //  function for new products
 // create function with real id and caculate time
@@ -138,11 +139,18 @@
               unset($featured_stores_arr[$i]);
           }
         }
-        return $featured_stores_arr;
+
+        $all_stores_infor = array_values($featured_stores_arr);
+
+        $result = [];
+        for ($i=0; $i < 10; $i++) {
+            $result[$i] = $all_stores_infor[$i];
+        }
+        return $result;
       };
-      echo '<pre>';
-      var_dump(featured_stores_arr());
-      echo '</pre>';
+      // echo '<pre>';
+      // var_dump(featured_stores_arr());
+      // echo '</pre>';
 
 // NEW STORES
 // create function with real id and caculate time
