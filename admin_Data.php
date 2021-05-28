@@ -16,22 +16,22 @@
 ?>
 
 <?php
-   $About_us_edit = "About-us.php";
-   $file_html = file_get_contents($About_us_edit);
-   $file_html = htmlentities($file_html, ENT_QUOTES);
+   $About_us_edit= "About-us.php";
+   $About_us_html= file_get_contents($About_us_edit);
+   $About_us_html= htmlentities($About_us_html, ENT_QUOTES);
    // echo $file_html;
 
-   $Tos_edit = "ToS.php";
-   $file_html1 = file_get_contents($Tos_edit);
-   $file_html1 = htmlentities($file_html1, ENT_QUOTES);
+   $Tos_edit= "ToS.php";
+   $ToS_html= file_get_contents($Tos_edit);
+   $ToS_html= htmlentities($ToS_html, ENT_QUOTES);
 
-   $copyright = "copyright.php";
-   $file_html2 = file_get_contents($Tos_edit);
-   $file_html2 = htmlentities($file_html2, ENT_QUOTES);
+   $copyright_edit= "copyright.php";
+   $copyright_html= file_get_contents($copyright_edit);
+   $copyright_html= htmlentities($copyright_html, ENT_QUOTES);
 
-   $private = "private.php";
-   $file_html3 = file_get_contents($private);
-   $file_html3 = htmlentities($file_html3, ENT_QUOTES);
+   $private_edit= "private.php";
+   $private_html= file_get_contents($private_edit);
+   $private_html= htmlentities($private_html, ENT_QUOTES);
 ?>
 
 
@@ -41,10 +41,26 @@
     <meta charset="utf-8">
     <title></title>
     <script>
-    function encode_content(){
-    var content = document.getElementById('file_content').value;
-    document.getElementById('file_content').value = encodeURIComponent(content);
-  }
+    function About_us_encode_content(){
+    var content = document.getElementById('About_us_content').value;
+    document.getElementById('About_us_content').value = encodeURIComponent(content);
+    }
+
+    function ToS_encode_content(){
+    var content = document.getElementById('ToS_content').value;
+    document.getElementById('ToS_content').value = encodeURIComponent(content);
+    }
+
+    function Copyright_encode_content(){
+    var content = document.getElementById('ToS_content').value;
+    document.getElementById('ToS_content').value = encodeURIComponent(content);
+    }
+
+    function Private_encode_content(){
+    var content = document.getElementById('private_content').value;
+    document.getElementById('private_content').value = encodeURIComponent(content);
+    }
+
 
   </script>
   </head>
@@ -52,26 +68,26 @@
   <body>
     <h1>This is Dashboard Menu</h1>
     <h2>About-us Editing</h2>
-    <form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-    <textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html; ?></textarea>
+    <form name="edit_form" method="post" action="save_About_us.php" onsubmit="About_us_encode_content()">
+    <textarea name="About_us_content" id="About_us_content" style="width:100%;" rows="20"><?php echo $About_us_html; ?></textarea>
     <input type="submit" value="Save this file">
   </form>
 
   <h2>ToS Editing</h2>
-  <form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-  <textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html1; ?></textarea>
+  <form name="edit_form" method="post" action="save_Tos.php" onsubmit="ToS_encode_content()">
+  <textarea name="ToS_content" id="ToS_content" style="width:100%;" rows="20"><?php echo $ToS_html; ?></textarea>
   <input type="submit" value="Save this file">
 </form>
 
 <h2>Copyright Editing</h2>
-<form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-<textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html2; ?></textarea>
+<form name="edit_form" method="post" action="save_copyright.php" onsubmit="Copyright_encode_content()">
+<textarea name="copyright_content" id="copyright_content" style="width:100%;" rows="20"><?php echo $copyright_html; ?></textarea>
 <input type="submit" value="Save this file">
 </form>
 
 <h2>Private Editing</h2>
-<form name="edit_form" method="post" action="save_file.php" onsubmit="encode_content()">
-<textarea name="file_content" id="file_content" style="width:100%;" rows="20"><?php echo $file_html3; ?></textarea>
+<form name="edit_form" method="post" action="save_private.php" onsubmit="Private_encode_content()">
+<textarea name="private_content" id="private_content" style="width:100%;" rows="20"><?php echo $private_html; ?></textarea>
 <input type="submit" value="Save this file">
 </form>
   </body>
