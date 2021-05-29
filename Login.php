@@ -1,7 +1,9 @@
 <?php
 $userfile = fopen("Member_data.txt","r");
 $readfile = fread($userfile,filesize("Member_data.txt"));
-echo($readfile);
+echo "<pre>";
+var_dump($readfile);
+echo "</pre>"
 
 ?>
 

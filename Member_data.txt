@@ -1,11 +1,1 @@
-array (
-  0 => 'TRAN CHAN NAM',
-  1 => 's3804825@rmit.edu.vn',
-  2 => 's3818104',
-  3 => '$2y$10$Mc9B9TO.v/oX7UcMVm6LoeEU6rPVZaGxoeMUq41DEoqCipNtjPrh2',
-  4 => '032464392',
-  5 => '123t',
-  6 => '123e',
-  7 => '1234',
-  8 => '26',
-)
+TRAN CHAN 

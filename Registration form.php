@@ -255,21 +255,28 @@ function test_input($data) {
 
   <?php
   echo "<h2>Your Input:</h2>";
-  echo $name. "<br>";
-  echo $email. "<br>";
-  echo $username. "<br>";
-  echo $phone_number. "<br>";
-  echo $address. "<br>";
-  echo $passwordhash. "<br>";
-  echo $city. "<br>";
-  echo $zipcode. "<br>";
-  echo $CountryCode. "<br>";
+  // echo $name. "<br>";
+  // echo $email. "<br>";
+  // echo $username. "<br>";
+  // echo $phone_number. "<br>";
+  // echo $address. "<br>";
+  // echo $passwordhash. "<br>";
+  // echo $city. "<br>";
+  // echo $zipcode. "<br>";
+  // echo $CountryCode. "<br>";
 
   $data_array= [$name, $email, $username, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode];
-  $memberfile= fopen("Admin_Save_Data\Member_data.txt","w");
-  fwrite($memberfile, var_export($data_array, true));
-  fclose($memberfile);
+  $memberfile= fopen("Member_data.txt","w");
+  file_put_contents("Member_data.txt",$data_array[0]. " ", FILE_APPEND | LOCK_EX);
+  while(feof($memberfile)){
+  for ($i=0; $i < count($data_array) ; $i++) {
 
+    // file_put_content($memberfile, var_export(($data_array[$i]). " ", true));
+    file_put_contents("Member_data.txt",$data_array[$i]. " ", FILE_APPEND | LOCK_EX);
+  //
+  // }
+  fclose($memberfile);
+}
   ?>
 
 
