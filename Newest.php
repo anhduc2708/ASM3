@@ -190,13 +190,6 @@ main h2{
           <a href="Store home page.php">Products</a>
           <a href="About-us.php">Contact Us</a>
         </nav>
-        <div>
-        <label for="ProductBrowse">Browse Product:</label>
- <select name="Browse">
-   <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
-   <option value="Browse By Release Day"> By Release Day</option>
- </select>
-</div>
     </header>
     <aside id="left">
 
@@ -205,38 +198,7 @@ main h2{
 
     </aside>
     <main>
-	<h2>Shoes</h2>
-    <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shoes4.png" alt="Shoe" height="100">
-		</a>
-	<div class="prices">250$</div>
-	<div class="prices">Nike Boost</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shoes2.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">Nike Force</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shoes1.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike Jordan</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shoes3.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike HD Grade Edition</div>
-	</div>
+      <h2>Newest Products:</h2><br>
 
 	<h2>Shirt</h2>
 	 <div class="productimg">
@@ -269,108 +231,7 @@ main h2{
 		</a>
 	<div class="prices">400$</div>
 	<div class="prices">Nike logo black edition</div>
-	</div>
-
-	<h2>Short</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/Short1.jpg" alt="Short" width="600" height="300px">
-		</a>
-	<div class="prices">50$</div>
-	<div class="prices">Adidas Original Style</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/Short2.jpg" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">39$</div>
-	<div class="prices">Underarmor Short</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/Short3.jpg" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">49$</div>
-	<div class="prices">Grey Edition Adias</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/Short3.png" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">60$</div>
-	<div class="prices">Nike Full Black Edition</div>
-	</div>
-
-
-	<h2>Hat</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/cap1.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">500$</div>
-	<div class="prices">Nike Fashion Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/cap2.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">100$</div>
-	<div class="prices">Just Do It Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/cap3.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">2000$</div>
-	<div class="prices">Fly to Paris Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/cap4.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">HD Hat</div>
-	</div>
-
-	<h2>Football Shoes</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/footballshoes1.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike Mercurial Superfly 8 FG</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/footballshoes2.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">Nike Phantom GT Academy FG</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/footballshoes3.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">100$</div>
-	<div class="prices">Nike Mercurial Superfly Academy 7</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/footballshoes4.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">120$</div>
-	<div class="prices">Nike Mercurial Vapor 14 Academy IC</div>
-	</div>
-
+</div><br>
 
     </main>
 

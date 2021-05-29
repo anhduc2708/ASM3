@@ -36,7 +36,7 @@
         min-width: 200px;
         float: left;
 		margin-bottom:10px;
-		text-align:left;
+		text-align:center;
 		height: 100%;
 		margin-top:10px;
 
@@ -180,6 +180,27 @@ main h2{
         color: black;
         padding-left: 50px;
       }
+
+
+button{
+  background-color: black;
+  color: white;
+  margin-top: 250px;
+  height: 100px;
+  display: block;
+  width: 100%;
+  font-size: 50px;
+  border-radius: 40px;
+}
+button:hover{
+  background-color: #ddd;
+ color: black;
+}
+
+aside a{
+  text-decoration: none;
+}
+
     </style>
   </head>
   <body>
@@ -194,17 +215,20 @@ main h2{
         <label for="ProductBrowse">Browse Product:</label>
  <select name="Browse">
    <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
+
    <option value="Browse By Release Day"> By Release Day</option>
  </select>
 </div>
     </header>
     <aside id="left">
 
-	 <img src="Image/saleoffpic.png" height="100%" width="100%" float="left"></img>
+
+      <a href="Oldest.php" class="previous"><button type="button" name="button">&laquo; Previous</button></a>
 
 
     </aside>
     <main>
+      <h2>Newest Products:</h2><br>
 	<h2>Shoes</h2>
     <div class="productimg">
 		<a target="_blank" href="detailpage.php">
@@ -236,41 +260,10 @@ main h2{
 		</a>
 	<div class="prices">400$</div>
 	<div class="prices">Nike HD Grade Edition</div>
-	</div>
+</div><br>
 
-	<h2>Shirt</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shirts1.png" alt="Shirt" width="500" height="400">
-		</a>
-	<div class="prices">100$</div>
-	<div class="prices">Bangkok Shirt</div>
-	</div>
 
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shirts2.png" alt="Shirt" width="600" height="400">
-		</a>
-	<div class="prices">50$</div>
-	<div class="prices">Nike Baseketball Shirt</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shirts3.png" alt="Shirt" width="600" height="400">
-		</a>
-	<div class="prices">200$</div>
-	<div class="prices">Yellow Nike Shirt</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shirts4.png" alt="Shirt" width="600" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike logo black edition</div>
-	</div>
-
+<h2>Oldest Products:</h2><br>
 	<h2>Short</h2>
 	 <div class="productimg">
 		<a target="_blank" href="detailpage.php">
@@ -304,81 +297,12 @@ main h2{
 	<div class="prices">Nike Full Black Edition</div>
 	</div>
 
-
-	<h2>Hat</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/cap1.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">500$</div>
-	<div class="prices">Nike Fashion Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/cap2.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">100$</div>
-	<div class="prices">Just Do It Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/cap3.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">2000$</div>
-	<div class="prices">Fly to Paris Hat</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/cap4.png" alt="Hat" width="600" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">HD Hat</div>
-	</div>
-
-	<h2>Football Shoes</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/footballshoes1.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike Mercurial Superfly 8 FG</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/footballshoes2.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">Nike Phantom GT Academy FG</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/footballshoes3.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">100$</div>
-	<div class="prices">Nike Mercurial Superfly Academy 7</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/footballshoes4.png" alt="Football Shoes" width="600" height="400">
-		</a>
-	<div class="prices">120$</div>
-	<div class="prices">Nike Mercurial Vapor 14 Academy IC</div>
-	</div>
-
-
     </main>
 
 
     <aside id="right">
 
-	  <img src="Image/spotify-premium.jpg" height="500px" width="100%"></img>
-	  <p>Advs.</p>
+	 <a href="Newest.php" class="next"><button type="button" name="button">Next &raquo;</button></a>
     </aside>
     <footer>
       <div class="row">
@@ -422,4 +346,16 @@ main h2{
 
     </footer>
   </body>
+  <script>
+function styleselect() {
+    if (document.getElementById('globalstyleselect').value == "3") {
+    $("#stylediv").html('<b>Boca Style</b>');
+  }
+    if (document.getElementById('globalstyleselect').value == "2") {
+    $("#stylediv").html('<b>Bella Style</b>');}
+}
+    if (document.getElementById('globalstyleselect').value == "1") {
+    $("#stylediv").html('<b>Terra Style</b>');
+}
+</script>
 </html>

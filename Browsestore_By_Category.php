@@ -194,6 +194,7 @@ main h2{
         <label for="ProductBrowse">Browse Product:</label>
  <select name="Browse">
    <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
+
    <option value="Browse By Release Day"> By Release Day</option>
  </select>
 </div>

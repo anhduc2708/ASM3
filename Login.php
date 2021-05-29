@@ -1,3 +1,10 @@
+<?php
+$userfile = fopen("Member_data.txt","r");
+$readfile = fread($userfile,filesize("Member_data.txt"));
+echo($readfile);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

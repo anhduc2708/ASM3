@@ -190,13 +190,7 @@ main h2{
           <a href="Store home page.php">Products</a>
           <a href="About-us.php">Contact Us</a>
         </nav>
-        <div>
-        <label for="ProductBrowse">Browse Product:</label>
- <select name="Browse">
-   <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
-   <option value="Browse By Release Day"> By Release Day</option>
- </select>
-</div>
+
     </header>
     <aside id="left">
 
@@ -205,6 +199,7 @@ main h2{
 
     </aside>
     <main>
+      <!-- <h2>Newest Products:</h2><br>
 	<h2>Shoes</h2>
     <div class="productimg">
 		<a target="_blank" href="detailpage.php">
@@ -269,10 +264,11 @@ main h2{
 		</a>
 	<div class="prices">400$</div>
 	<div class="prices">Nike logo black edition</div>
-	</div>
+</div><br> -->
 
-	<h2>Short</h2>
-	 <div class="productimg">
+<h2>Oldest Products:</h2><br>
+	<!-- <h2>Short</h2> -->
+	 <!-- <div class="productimg">
 		<a target="_blank" href="detailpage.php">
 		<img src="Image/Short1.jpg" alt="Short" width="600" height="300px">
 		</a>
@@ -302,7 +298,7 @@ main h2{
 		</a>
 	<div class="prices">60$</div>
 	<div class="prices">Nike Full Black Edition</div>
-	</div>
+	</div> -->
 
 
 	<h2>Hat</h2>
