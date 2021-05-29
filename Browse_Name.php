@@ -46,41 +46,41 @@
 
 
     //print the stores by name
-    function search_name($letters){
-      $name_arr = sort_name_arr();
-      $result_arr = [];
-      for ($i=0; $i < count($name_arr); $i++) {
-        $first_char = $name_arr[$i][0];
-        if ($first_char == $letters) {
-          array_push($result_arr,$name_arr[$i]);
-        }
+  function search_name($letters){
+    $name_arr = sort_name_arr();
+    $result_arr = [];
+    for ($i=0; $i < count($name_arr); $i++) {
+      $first_char = $name_arr[$i][0];
+      if ($first_char == $letters) {
+        array_push($result_arr,$name_arr[$i]);
       }
-      return $result_arr;
-
+    }
+    return $result_arr;
   };
+
   // echo "<pre>";
   // var_dump(search_name('2'));
   // echo "</pre>";
 
   // display # stores char
   function not_letter_stores(){
-    $letters = array_merge(range('A', 'Z'), range('a', 'z'));
+    $numbers = range(0, 9);
     $name_arr = sort_name_arr();
+    $result_arr = [];
     for ($i=0; $i < count($name_arr) ; $i++) {
-      for ($x=0; $x < count($name_arr) ; $x++) {
-          if ($letters[$i] == $name_arr[$x][0]) {
-            unset($name_arr[$x]);
+        $first_char = $name_arr[$i][0];
+        for ($x=0; $x <count($numbers) ; $x++) {
+          if ($first_char == $numbers[$x]) {
+            array_push($result_arr,$name_arr[$i]);
           }
         }
-    };
-    return $name_arr;
-    // return $letters;
+    }
+    return $result_arr;
+  };
 
-};
-
-echo "<pre>";
-var_dump(not_letter_stores());
-echo "</pre>";
+// echo "<pre>";
+// var_dump(not_letter_stores());
+// echo "</pre>";
 
 
  ?>
