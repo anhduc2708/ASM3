@@ -37,9 +37,16 @@
             <li class="Nav-item">
               <a href = "Login.php" title = "Sign in"> Sign in</a>
             </li>
+
             <li class="Nav-item">
-            <a href = "Registration form.php" title = "Sign up"> Sign up</a>
+              <label> Browse Stores </label>
+              <select>
+                <option> Select Options </option>
+                <option value="">By Name</option>
+                <option value="">By Category</option>
+              </select>
             </li>
+
         </ul>
       </div>
   </header>

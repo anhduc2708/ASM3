@@ -194,12 +194,11 @@
       }
     };
 
-    ?>
+    // Search By Name
 
-    <div id="replace" >
-    <p> <?php display_information(new_stores_arr()); ?> <p>
-    <button onclick="create_ID()"> TEST</button>
-    </div>
+    
+
+    ?>
 
   </body>
   <!-- <script src="Js/test.js"></script> -->
