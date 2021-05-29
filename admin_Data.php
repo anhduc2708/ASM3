@@ -74,25 +74,25 @@
   <body>
     <h1>This is Dashboard Menu</h1>
     <h2>About-us Editing</h2>
-    <form name="edit_form" method="post" action="Admin_Save_Data/save_About_us.php" onsubmit="About_us_encode_content()">
+    <form name="edit_form" method="post" action="save_About_us.php" onsubmit="About_us_encode_content()">
     <textarea name="About_us_content" id="About_us_content" style="width:100%;" rows="20"><?php echo $About_us_html; ?></textarea>
     <input type="submit" value="Save this file">
   </form>
 
   <h2>ToS Editing</h2>
-  <form name="edit_form" method="post" action="Admin_Save_Data/save_Tos.php" onsubmit="ToS_encode_content()">
+  <form name="edit_form" method="post" action="save_Tos.php" onsubmit="ToS_encode_content()">
   <textarea name="ToS_content" id="ToS_content" style="width:100%;" rows="20"><?php echo $ToS_html; ?></textarea>
   <input type="submit" value="Save this file">
 </form>
 
 <h2>Copyright Editing</h2>
-<form name="edit_form" method="post" action="Admin_Save_Data/save_copyright.php" onsubmit="Copyright_encode_content()">
+<form name="edit_form" method="post" action="save_copyright.php" onsubmit="Copyright_encode_content()">
 <textarea name="copyright_content" id="copyright_content" style="width:100%;" rows="20"><?php echo $copyright_html; ?></textarea>
 <input type="submit" value="Save this file">
 </form>
 
 <h2>Private Editing</h2>
-<form name="edit_form" method="post" action="Admin_Save_Data/save_private.php" onsubmit="Private_encode_content()">
+<form name="edit_form" method="post" action="save_private.php" onsubmit="Private_encode_content()">
 <textarea name="private_content" id="private_content" style="width:100%;" rows="20"><?php echo $private_html; ?></textarea>
 <input type="submit" value="Save this file">
 </form>
