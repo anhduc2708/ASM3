@@ -1,6 +1,6 @@
 <?php
 
-
+      // get id and pass and hassing password 
       if ($_SERVER["REQUEST_METHOD"] == "POST"){
       $id = $_POST['username'];
       $pass = $_POST['password'];
@@ -14,7 +14,7 @@
 
       };
     };
-
+    //if file exist stop run page
     // $filename = "install.php";
     // if (file_exists($filename)) {
     //     echo "<h1> 404 Error Connection </h1>";
