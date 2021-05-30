@@ -281,9 +281,9 @@ footer{
 
 /* Browse_category */
 .Browse_category {
-    margin:auto;
-    /* padding-left: 200px; */
+
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .Browse_category label{
