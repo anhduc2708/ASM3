@@ -1,5 +1,6 @@
 <?php
 // define variables and set to empty values
+
 $nameError= $emailError= $usernameError= "";
 $phone_numberError= $passwordmemberError= $addressError= "";
 $cityError= $zipcodeError= $CountryCodeError= "";
@@ -76,6 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 }
+
 
 function test_input($data) {
   $data = trim($data);
@@ -254,29 +256,28 @@ function test_input($data) {
   </div>
 
   <?php
-  echo "<h2>Your Input:</h2>";
-  // echo $name. "<br>";
-  // echo $email. "<br>";
-  // echo $username. "<br>";
-  // echo $phone_number. "<br>";
-  // echo $address. "<br>";
-  // echo $passwordhash. "<br>";
-  // echo $city. "<br>";
-  // echo $zipcode. "<br>";
-  // echo $CountryCode. "<br>";
+$data_array= array($username, $email, $name, $passwordmember, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode);
 
-  $data_array= [$name, $email, $username, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode];
-  $memberfile= fopen("Member_data.txt","w");
-  file_put_contents("Member_data.txt",$data_array[0]. " ", FILE_APPEND | LOCK_EX);
-  while(feof($memberfile)){
-  for ($i=0; $i < count($data_array) ; $i++) {
-
-    // file_put_content($memberfile, var_export(($data_array[$i]). " ", true));
-    file_put_contents("Member_data.txt",$data_array[$i]. " ", FILE_APPEND | LOCK_EX);
-  //
-  // }
-  fclose($memberfile);
-}
+  $userfile = fopen("Member_data.txt","a+");
+  $filesize = filesize("Member_data.txt");
+  $readmemberfile= fopen("Member_data.txt","r");
+  while(!feof($readmemberfile)){
+    $checkData= fgets($readmemberfile);
+    $userdata= explode(",",$checkData);
+    if ($userdata[0] != $username){
+      $memberfile= fopen("Member_data.txt","a+");
+      foreach ($data_array as $key) {
+        file_put_contents("Member_data.txt", $key. ",",   FILE_APPEND);
+      }
+      file_put_contents("Member_data.txt","\n",   FILE_APPEND);
+      fclose($memberfile);
+    }
+    else {
+      echo "User already exist";
+      break;
+    }
+    break;
+  }
   ?>
 
 
@@ -292,9 +293,7 @@ function test_input($data) {
 
 </div>
 </body>
-
   <footer>
-
     <!-- Bottom nav menu -->
     <div class="Bottom-nav">
       <div class = "footer-content">
@@ -330,3 +329,4 @@ function test_input($data) {
   </footer>
 </body>
 </html>
+
