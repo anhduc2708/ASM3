@@ -51,6 +51,44 @@
       </div>
   </header>
   <body>
+    <div class="Browse_category">
+    <label> <h3>Select The Stores By Categories </h2></label>
+
+    <form method="POST" action="">
+    <select name="categories"  onchange="this.form.submit()" style="width:300px;" >
+      <option value="" disabled selected> -- Select -- </option>
+      <option value= "Department stores">Department stores</option>
+      <option value= "Grocery stores">Grocery stores</option>
+      <option value= "Restaurants">Restaurants</option>
+      <option value= "Clothing stores">Clothing stores</option>
+      <option value= "Accessory stores">Accessory stores</option>
+      <option value= "Pharmacies">Pharmacies</option>
+      <option value= "Technology stores">Technology stores</option>
+      <option value= "Pet stores">Pet stores</option>
+      <option value= "Toy stores">Toy stores</option>
+      <option value= "Specialty stores">Specialty stores</option>
+      <option value= "Thrift stores">Thrift stores</option>
+      <option value= "Services">Services</option>
+      <option value= "Kiosks">Kiosks</option>
+    </form>
+    </select>
+
+    </div>
+
+    <div class="divide_place">
+    <div class="small-container">
+    <ul>
+      <?php
+        if(isset($_POST["categories"])){
+        $category_name=$_POST["categories"];
+        display_stores(search_category($category_name));}
+      ?>
+    </ul>
+    </div>
+    </div>
+
+
+
 
 <?php
 
@@ -70,9 +108,6 @@ function read_all_stores() {
   }
   return $stores;
 };
-// echo "<pre>";
-// var_dump(read_all_stores());
-// echo "</pre>";
 
 
 function read_all_category() {
@@ -91,14 +126,11 @@ function read_all_category() {
   }
   return $categories;
 };
-// echo "<pre>";
-// var_dump(read_all_category());
-// echo "</pre>";
+
 
 
 // display infor
-function search_category(){
-  $categories_name = 'Technology stores';
+function search_category($categories_name){
   $stores = read_all_stores();
   $categories = read_all_category();
   $category_id = 0;
@@ -111,23 +143,26 @@ function search_category(){
   }
   for ($i=0; $i <count($stores) ; $i++) {
       if ($stores[$i]['category_id'] == $category_id) {
-          array_push($result, $stores[$i]);
+          array_push($result, $stores[$i]['name']);
     }
   }
   return $result;
 };
 
-// echo "<pre>";
-// var_dump(search_category());
-// echo "</pre>";
+
+function display_stores($array){
+  $stores_logo = ['Image/adidas.png','Image/ananas.png','Image/bitis.png','Image/chanel.png','Image/gucci.png','Image/LV.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png',];
+  for ($i=0; $i <count($array); $i++) {
+    $display = $array[$i];
+    echo " <li>
+            <a href='Store home page.php'> <img src='$stores_logo[$i]' alt='Shoe' width='150px' height='150px'> </a>
+            <div class='infor'> $display </div>
+           </li>";
+  }
+};
+?>
 
 
-
-
-
-
-
- ?>
   </body>
   <footer>
     <!-- Bottom nav menu -->
@@ -159,4 +194,24 @@ function search_category(){
       </div>
    </div>
   </footer>
+
+  <script type="text/javascript">
+
+  function Browse_Stores(obj)
+  {
+      var message = document.getElementById('show_message');
+      var value = obj.value;
+      if (value === ''){
+          message.innerHTML = "Select Again";
+      }
+      else if (value === 'br_name'){
+          window.location.href = "Browse_Name.php";
+      }
+      else if (value === 'br_category'){
+          window.location.href = "Browse_Category.php";
+      }
+  };
+
+  </script>
+
 </html>

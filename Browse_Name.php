@@ -130,11 +130,11 @@
 
 function display_stores($array){
   // $array = search_name('A');
-  $stores_logo = ['Image/adidas.png','Image/ananas.png','Image/bitis.png','Image/chanel.png','Image/gucci.png','Image/LV.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png',];
+  $stores_logo = ['Image/adidas.png','Image/ananas.png','Image/bitis.png','Image/chanel.png','Image/gucci.png','Image/LV.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png','Image/adidas.png','Image/ananas.png','Image/bitis.png','Image/chanel.png','Image/gucci.png','Image/LV.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png','Image/adidas.png','Image/Store logo - Copy.png','Image/nike.png', ];
   for ($i=0; $i <count($array); $i++) {
     $display = $array[$i];
     echo " <li>
-            <a href='Store home page.php'> <img src='$stores_logo[$i]' alt='Shoe' width='150px' height='200px'> </a>
+            <a href='Store home page.php'> <img src='$stores_logo[$i]' alt='Shoe' width='150px' height='150px'> </a>
             <div class='infor'> $display </div>
            </li>";
   }
@@ -306,9 +306,21 @@ else if(array_key_exists('Other', $_POST)) {
 
 <script type="text/javascript">
 
-  function letters() {
-  var letters =
-  }
+function Browse_Stores(obj)
+{
+    var message = document.getElementById('show_message');
+    var value = obj.value;
+    if (value === ''){
+        message.innerHTML = "Select Again";
+    }
+    else if (value === 'br_name'){
+        window.location.href = "Browse_Name.php";
+    }
+    else if (value === 'br_category'){
+        window.location.href = "Browse_Category.php";
+    }
+}
+
 </script>
 
 </html>
