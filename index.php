@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Image/favicon.png">
     <script type="text/javascript" src="js/cookie.js"></script>
-
   </head>
 
   <header>
@@ -38,13 +37,14 @@
               <a href = "Login.php" title = "Sign in"> Sign in</a>
             </li>
 
-            <li class="Nav-item">
+            <li class ="Nav-item">
               <label> Browse Stores </label>
-              <select>
-                <option> Select Options </option>
-                <option value="">By Name</option>
-                <option value="">By Category</option>
+              <select id="stores" onchange="Browse_Stores(this)">
+                <option value=""> -- Select -- </option>
+                <option value= "br_name">By Name</option>
+                <option value= "br_category">By Category</option>
               </select>
+              <p style="color: red" id="show_message"></p>
             </li>
 
         </ul>
@@ -352,4 +352,5 @@ function display_product($array){
    </div>
   </footer>
 
+  <script src="Js/Homepage.js"> </script>
 </html>
