@@ -1,6 +1,6 @@
 <?php
 
-      // get id and pass and hassing password 
+      // get id and pass and hassing password
       if ($_SERVER["REQUEST_METHOD"] == "POST"){
       $id = $_POST['username'];
       $pass = $_POST['password'];
