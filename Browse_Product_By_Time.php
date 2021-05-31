@@ -290,20 +290,14 @@ aside a{
   // create a result arr wth all new products informations
   function new_product_arr(){
     $time_arr = time_products_arr();
-
-    // $id_all_products = array_keys($time_arr);
+    $id_all_products = array_keys($time_arr);
     $all_products_arr = read_all_products();
     $result = [];
-    $test_result = [];
     for ($i=0; $i <10; $i++) {
-      
-      // $test_result[$i] = $all_products_arr[$id_all_products[$i] - 1];
-      $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price'], str_replace("Z","",$all_products_arr[$id_all_products[$i] - 1]['created_time']),  ];
+      $id_products = $id_all_products[$i] - 1;
+      $result[$i] = [ $all_products_arr[$id_products]['name'], $all_products_arr[$id_products]['price'], str_replace("Z","",$all_products_arr[$id_products]['created_time'])];
     }
-    // return $test_result;
-    // return $result;
-    return $id_array;
-
+    return $result;
   };
 
   // echo '<pre>';
@@ -332,7 +326,8 @@ aside a{
     $all_products_arr = read_all_products();
     $result = [];
     for ($i=0; $i <10; $i++) {
-      $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price'], str_replace("Z","",$all_products_arr[$id_all_products[$i] - 1]['created_time']),  ];
+      $id_products = $id_all_products[$i] - 1;
+      $result[$i] = [ $all_products_arr[$id_products]['name'], $all_products_arr[$id_products]['price'], str_replace("Z","",$all_products_arr[$id_products]['created_time'])];
     }
     return $result;
   };
