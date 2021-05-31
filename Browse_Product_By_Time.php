@@ -211,14 +211,20 @@ aside a{
           <a href="Store home page.php">Products</a>
           <a href="About-us.php">Contact Us</a>
         </nav>
-        <div>
-        <label for="ProductBrowse">Browse Product:</label>
- <select name="Browse">
-   <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
 
-   <option value="Browse By Release Day"> By Release Day</option>
- </select>
-</div>
+  
+	<!-- PHP BROWSE -->
+  <div>
+	  <label for="ProductBrowse">Browse Product:</label>
+ 	  <select id="products" onchange="Browse_Products(this)">
+	    <option value=""> -- Select -- </option>
+   	  <option value="br_category">Browse Products by Category</option>
+   	  <option value="br_time">Browse Products by Created Time</option>
+ 	  </select>
+	  <p style="color: red" id="show_message"></p>
+	</div>
+
+
     </header>
     <aside id="left">
 
@@ -346,16 +352,21 @@ aside a{
 
     </footer>
   </body>
-  <script>
-function styleselect() {
-    if (document.getElementById('globalstyleselect').value == "3") {
-    $("#stylediv").html('<b>Boca Style</b>');
-  }
-    if (document.getElementById('globalstyleselect').value == "2") {
-    $("#stylediv").html('<b>Bella Style</b>');}
-}
-    if (document.getElementById('globalstyleselect').value == "1") {
-    $("#stylediv").html('<b>Terra Style</b>');
+
+<script type="text/javascript">
+  function Browse_Products(obj)
+{
+    var message = document.getElementById('show_message');
+    var value = obj.value;
+    if (value === ''){
+        message.innerHTML = "Select Again";
+    }
+    else if (value === 'br_time'){
+        window.location.href = "Browse_Product_By_Time.php";
+    }
+    else if (value === 'br_category'){
+        window.location.href = "Browse_Product_By_Category.php";
+    }
 }
 </script>
 </html>
