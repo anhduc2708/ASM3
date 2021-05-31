@@ -182,7 +182,7 @@ main h2{
       }
 
 
-button{
+#move{
   background-color: black;
   color: white;
   margin-top: 250px;
@@ -192,13 +192,35 @@ button{
   font-size: 50px;
   border-radius: 40px;
 }
-button:hover{
+
+#move:hover{
   background-color: #ddd;
- color: black;
+  color: black;
 }
 
 aside a{
   text-decoration: none;
+}
+.options{
+  font-size: 24px;
+}
+.options button{
+  text-align: center;
+  background-color: black;
+  color: white;
+  width:100px;
+  height:50px;
+  border-radius: 40px;
+  margin-right: 10px;
+
+}
+.options button:hover{
+  background-color: #ddd;
+  color: black;
+}
+.options label{
+  margin-right:10px;
+  font-size: 26px;
 }
 
     </style>
@@ -227,15 +249,22 @@ aside a{
 
     </header>
     <aside id="left">
-
-
-      <a href="Oldest.php" class="previous"><button type="button" name="button">&laquo; Previous</button></a>
-
-
+      <a href="Oldest.php" class="previous"> <button type="button" name="button" id="move" > &laquo; Previous</button></a>
     </aside>
-    <main>
-      <h2>Newest Products:</h2><br>
-	<h2>Shoes</h2>
+
+  <main>
+
+  <div class="options">
+  <h2>Select Display Options By Day</h2><br>
+  <button>Newest First</button>
+  <label> OR </label>
+  <button>Oldest First</button>
+  </div>
+    
+  
+
+  <!-- <h2>Newest Products:</h2><br> -->
+	<!-- <h2>Shoes</h2>
     <div class="productimg">
 		<a target="_blank" href="detailpage.php">
 		<img src="Image/shoes4.png" alt="Shoe" height="100">
@@ -266,11 +295,11 @@ aside a{
 		</a>
 	<div class="prices">400$</div>
 	<div class="prices">Nike HD Grade Edition</div>
-</div><br>
+</div><br> -->
 
 
-<h2>Oldest Products:</h2><br>
-	<h2>Short</h2>
+<!-- <h2>Oldest Products:</h2><br> -->
+	<!-- <h2>Short</h2>
 	 <div class="productimg">
 		<a target="_blank" href="detailpage.php">
 		<img src="Image/Short1.jpg" alt="Short" width="600" height="300px">
@@ -301,15 +330,15 @@ aside a{
 		</a>
 	<div class="prices">60$</div>
 	<div class="prices">Nike Full Black Edition</div>
-	</div>
+	</div> -->
 
     </main>
 
 
     <aside id="right">
-
-	 <a href="Newest.php" class="next"><button type="button" name="button">Next &raquo;</button></a>
+	  <a href="Newest.php" class="next"><button type="button" name="button" id ="move">Next &raquo;</button></a>
     </aside>
+
     <footer>
       <div class="row">
   <div class="column">
