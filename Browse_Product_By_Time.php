@@ -331,12 +331,39 @@ aside a{
     }
     return $result;
   };
-  
   // echo '<pre>';
   // echo "OLD ARRAY";
   // var_dump(old_product_arr());
   // echo '</pre>';  
+
+  // display products
+  function display_product($arr){
+    // $arr = new_product_arr();
+    $all_products_arr = read_all_products();
+    $result = [$arr[0]];
+    for ($i=0; $i < count($all_products_arr); $i++) {
+      $split_z = str_replace("Z","",$all_products_arr[$i]['created_time']);
+      if ($arr[0][2] == $split_z ) {
+        $infor = [ $all_products_arr[$i]['name'], $all_products_arr[$i]['price'], str_replace("Z","",$all_products_arr[$i]['created_time'])];
+        array_push($result,$infor );
+      } 
+    }
+    return $result;
+};
+
+  $oldest_arr =  display_product(old_product_arr());
+  $newest_arr =  display_product(new_product_arr());
+
+  // echo "<pre>";
+  // var_dump($oldest_arr);
+  // echo "</pre>";
+
+  // echo "<pre>";
+  // var_dump($newest_arr);
+  // echo "</pre>";
   
+
+
   ?>
 
 
