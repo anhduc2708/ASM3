@@ -105,100 +105,45 @@ function new_product_arr(){
 // echo '</pre>';
 
 
-
-// STORES FUNCTION
-// add all stores file to arr
-function read_all_stores() {
-  $file_name = 'stores.csv';
-  $fp = fopen($file_name, 'r');
-  $first = fgetcsv($fp);
-  $stores = [];
-  while ($row = fgetcsv($fp)) {
-    $i = 0;
-    $store = [];
-    foreach ($first as $col_name) {
-      $store[$col_name] =  $row[$i];
-      $i++;
-    }
-    $stores[] = $store;
+function display_product($array){
+  $product_img = ['Image/cap1.png', 'Image/cap2.png', 'Image/cap3.png', 'Image/cap4.png', 'Image/footballshoes1.png', 'Image/footballshoes2.png', 'Image/footballshoes3.png', 'Image/footballshoes4.png', 'Image/shirts1.png', 'Image/shirts2.png'];
+  for ($i=0; $i <count($array); $i++) {
+    $display_name = $array[$i][0];
+    $display_price = $array[$i][1];
+    echo " <li>
+            <a href='detailpage.php'> <img src='$product_img[$i]' alt='Shoe' width='150px' height='200px'> </a>
+            <div class='infor'> $display_name </div>
+            <div class='infor'> $display_price$</div>
+           </li>";
   }
-  return $stores;
 };
 
-// get stores from file
-function get_store($store_id) {
-$stores = read_all_stores();
-foreach ($stores as $s){
-  if ($s['id'] == $store_id){
-    return $s;
-  }
-}
-return false;
-};
-
-// function for feature stores
-function featured_stores_arr(){
-  $all_stores_length = count(read_all_stores());
-  $featured_stores_arr = read_all_stores();
-  for ($i=0; $i < $all_stores_length ; $i++) {
-    if ($featured_stores_arr[$i]['featured'] == 'FALSE') {
-        unset($featured_stores_arr[$i]);
-    }
-  }
-
-  $all_stores_infor = array_values($featured_stores_arr);
-
-  $result = [];
-  for ($i=0; $i < 10; $i++) {
-      $result[$i] = $all_stores_infor[$i]['name'];
-  }
-  return $result;
-};
-// echo '<pre>';
-// var_dump(featured_stores_arr());
-// echo '</pre>';
-
-// NEW STORES
-// create function with real id and caculate time
-   function time_stores_arr(){
-     $time_arr= [];
-     for ($i=0; $i < count(read_all_stores()); $i++) {
-       $time_selected = read_all_stores()[$i]["created_time"];
-       $new_time_selected = str_replace("Z","",$time_selected);
-       $time_stores = time() - strtotime($new_time_selected);
-       $time_arr[$i] = abs($time_stores);
-     }
-     asort($time_arr);
-     return $time_arr;
-   };
-
-// function for new stores
-function new_stores_arr(){
-  $time_arr = time_stores_arr();
-  $id_all_stores = array_keys($time_arr);
-  $all_stores_arr = read_all_stores();
-  $result = [];
-  for ($i=0; $i <10; $i++) {
-    $result[$i] = $all_stores_arr[$id_all_stores[$i] - 1]['name'];
-  }
-  return $result;
-};
-
-// echo '<pre>';
-// var_dump(new_stores_arr());
-// echo '</pre>';
-
-// final part
-function display_information($array){
-for ($i=0; $i < count($array); $i++) {
-  $display = $array[$i];
-  // echo $array[$i]. "<br>";
-  echo "<p> $display <p>";
-}
-};
 
 
      ?>
+<!-- display new product  -->
+<div class="divide_place">
+<div class="small-container">
+<h2>New Products</h2>
+    <ul>
+    <?php display_product(new_product_arr()); ?>
+    </ul>
+</div>
+</div>
+
+<!-- display new product  -->
+<div class="divide_place">
+<div class="small-container">
+<h2>Featured Products</h2>
+    <ul>
+    <?php display_product(featured_products_arr()); ?>
+    </ul>
+</div>
+</div>
+
+
+
+
 
   </body>
 </html>

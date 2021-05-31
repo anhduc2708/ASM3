@@ -287,7 +287,7 @@ function time_products_arr(){
 	$id_all_products = array_keys($time_arr);
 	$all_products_arr = read_all_products();
 	$result = [];
-	for ($i=0; $i <10; $i++) {
+	for ($i=0; $i <5; $i++) {
 	  $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price']];
 	}
 	return $result;
@@ -296,10 +296,39 @@ function time_products_arr(){
 	// var_dump(new_product_arr());
 	// echo '</pre>';
 
+	// display product function
+	function display_product($array){
+		$product_img = ['Image/cap1.png', 'Image/cap2.png', 'Image/cap3.png', 'Image/cap4.png', 'Image/footballshoes1.png', 'Image/footballshoes2.png', 'Image/footballshoes3.png', 'Image/footballshoes4.png', 'Image/shirts1.png', 'Image/shirts2.png'];
+		for ($i=0; $i <count($array); $i++) {
+		  $display_name = $array[$i][0];
+		  $display_price = $array[$i][1];
+			echo "<div class='productimg'>
+					<a target='_blank' href='detailpage.php'>
+					<img src='$product_img[$i]' alt='Shoe' height='100'>
+					</a>
+					<div class='prices'>$display_price$</div>
+					<div class='prices'>$display_name</div>
+					</div>"	;	 
+		}
+	  };
+	  
+
+
   
 	?>
 
     <main>
+	<!-- DISPLAY PHP PART -->
+	<h2>New Products</h2>
+	<?php display_product(new_product_arr())?>
+
+
+	<!--FEATURED PRODUCTS  -->
+
+	<h2>Featured Products</h2>
+	<?php display_product(featured_products_arr())?>
+
+
 	<h2>Shoes</h2>
     <div class="productimg">
 		<a target="_blank" href="detailpage.php">
