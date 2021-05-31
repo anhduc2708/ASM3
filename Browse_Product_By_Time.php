@@ -248,6 +248,107 @@ aside a{
 
 
     </header>
+
+  <?php
+
+  // add all product file to arr
+  function read_all_products() {
+    $file_name = 'products.csv';
+    $fp = fopen($file_name, 'r');
+    $first = fgetcsv($fp);
+    $products = [];
+    while ($row = fgetcsv($fp)) {
+      $i = 0;
+      $product = [];
+      foreach ($first as $col_name) {
+        $product[$col_name] =  $row[$i];
+        $i++;
+      };
+      $products[] = $product;
+    };
+    return $products;
+  };
+
+
+  // create function with real id and caculate time
+  function time_products_arr(){
+    $time_arr= [];
+    for ($i=0; $i < count(read_all_products()); $i++) {
+      $time_selected = read_all_products()[$i]["created_time"];
+      $new_time_selected = str_replace("Z","",$time_selected);
+      $time_product = time() - strtotime($new_time_selected);
+      $time_arr[$i] = abs($time_product);
+    }
+    asort($time_arr);
+    return $time_arr;
+  };
+
+  // echo '<pre>';
+  // var_dump(time_products_arr());
+  // echo '</pre>';  
+
+  // create a result arr wth all new products informations
+  function new_product_arr(){
+    $time_arr = time_products_arr();
+
+    // $id_all_products = array_keys($time_arr);
+    $all_products_arr = read_all_products();
+    $result = [];
+    $test_result = [];
+    for ($i=0; $i <10; $i++) {
+      
+      // $test_result[$i] = $all_products_arr[$id_all_products[$i] - 1];
+      $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price'], str_replace("Z","",$all_products_arr[$id_all_products[$i] - 1]['created_time']),  ];
+    }
+    // return $test_result;
+    // return $result;
+    return $id_array;
+
+  };
+
+  // echo '<pre>';
+  // echo "NEW ARRAY";
+  // var_dump(new_product_arr());
+  // echo '</pre>';
+
+  // create function with real id and caculate time from high to low
+  function old_time_products_arr(){
+    $time_arr= [];
+    for ($i=0; $i < count(read_all_products()); $i++) {
+      $time_selected = read_all_products()[$i]["created_time"];
+      $new_time_selected = str_replace("Z","",$time_selected);
+      $time_product = time() - strtotime($new_time_selected);
+      $time_arr[$i] = abs($time_product);
+    }
+    arsort($time_arr);
+    return $time_arr;
+  };
+
+
+  // create a result arr wth all old products informations
+  function old_product_arr(){
+    $time_arr = old_time_products_arr();
+    $id_all_products = array_keys($time_arr);
+    $all_products_arr = read_all_products();
+    $result = [];
+    for ($i=0; $i <10; $i++) {
+      $result[$i] = [$all_products_arr[$id_all_products[$i] - 1]['name'], $all_products_arr[$id_all_products[$i] - 1]['price'], str_replace("Z","",$all_products_arr[$id_all_products[$i] - 1]['created_time']),  ];
+    }
+    return $result;
+  };
+  
+  // echo '<pre>';
+  // echo "OLD ARRAY";
+  // var_dump(old_product_arr());
+  // echo '</pre>';  
+  
+  ?>
+
+
+
+
+
+
     <aside id="left">
       <a href="Oldest.php" class="previous"> <button type="button" name="button" id="move" > &laquo; Previous</button></a>
     </aside>
@@ -260,7 +361,7 @@ aside a{
   <label> OR </label>
   <button>Oldest First</button>
   </div>
-    
+
   
 
   <!-- <h2>Newest Products:</h2><br> -->
