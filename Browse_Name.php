@@ -169,7 +169,7 @@ function display_stores($array){
       <input type="submit" name="letter_X" value="X" />
       <input type="submit" name="letter_Y" value="Y" />
       <input type="submit" name="letter_Z" value="Z" />
-      <input type="submit" name="Other" value="Other" />
+      <input type="submit" name="Other" value="#" />
   </form>
 </div>
 

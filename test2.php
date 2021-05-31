@@ -58,7 +58,7 @@ function featured_products_arr(){
     if ($featured_products_arr[$i]['featured_in_store'] == 'FALSE') {
         unset($featured_products_arr[$i]);
     }
-  };
+  }
 
   $all_products_infor = array_values($featured_products_arr);
 
@@ -74,6 +74,7 @@ function featured_products_arr(){
 // var_dump(featured_products_arr())."<br>";
 // echo '</pre> ';
 
+
 //  function for new products
 // create function with real id and caculate time
 function time_products_arr(){
@@ -87,6 +88,7 @@ function time_products_arr(){
   asort($time_arr);
   return $time_arr;
 };
+
 // create a result arr wth all new products informations
 function new_product_arr(){
   $time_arr = time_products_arr();
