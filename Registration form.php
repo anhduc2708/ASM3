@@ -265,7 +265,7 @@ function test_input($data) {
   </div>
 
   <?php
-$data_array= array($username, $email, $name, $passwordmember, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode);
+$data_array= array($username, $email, $name, $passwordhash, $phone_number, $address, $city, $zipcode, $CountryCode);
 
   $userfile = fopen("Member_data.txt","a+");
   $filesize = filesize("Member_data.txt");

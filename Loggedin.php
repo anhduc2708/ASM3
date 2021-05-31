@@ -7,6 +7,87 @@
 ?>
 
 
+
+<?php 
+
+//read file and add to array
+function read_array(){
+$filearray = [];
+$file_to_read= fopen("Member_data.txt","r");
+
+$first = fgets($file_to_read);
+$filearray = [$first];
+$filearray[1]="";
+if($first != feof($file_to_read)){
+  $file_line = fgets($file_to_read);
+  for ($i=1; $i < count($filearray) ; $i++) {
+    $filearray[$i]= $file_line;
+    }
+  }
+return $filearray;
+};
+
+// echo "<pre>";
+// var_dump(read_array());
+// echo "</pre>";
+
+// split lines
+function take_line(){
+$file_arr = read_array();
+$first_var = [];
+$count= 0;
+foreach (read_array() as $key) {
+  $line_split= explode(",",$key);
+  $first_var[$count++]=$line_split[0];
+}
+return $first_var;
+};
+
+// echo "<pre>";
+// var_dump(take_line());
+// echo "</pre>";
+
+// // get id and pass and hassing password
+function check(){
+  if ($_SERVER["REQUEST_METHOD"] == "POST"){
+    $id = $_POST['username'];
+    $pass = $_POST['password'];
+    $user = take_line();
+    
+    // for ($i=0; $i < count($user); $i++) { 
+    //   if (empty($id).empty($pass).($id != $user[$i])){
+    //     $result= 2;
+        
+    //   } else{
+    //     $result= 0;
+
+    //     break;
+    //   }
+    // }
+
+    // if($result == 2){
+    //   header('location: Login.php');
+    // }
+    // else{
+    //   echo "hi";
+    // }
+   
+    return $user;
+}
+};
+
+// check();
+echo "<pre>";
+var_dump(check());
+echo "</pre>";
+
+// $check = check();
+// if ($check != 2) {
+//   header('location: Login.php');
+// }
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

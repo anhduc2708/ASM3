@@ -29,8 +29,8 @@ return $filearray;
   // echo "<pre>";
   // var_dump(read_array());
   // echo "</pre>";
+  
   // split lines
-
    function take_line(){
      $file_arr = read_array();
      $first_var = [];

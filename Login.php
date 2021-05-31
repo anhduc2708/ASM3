@@ -246,29 +246,45 @@ footer{
     </div>
   </header>
 
+
 <h2>Login</h2>
 
-<form action="index.php" method="post">
-
-
-  <div class="imgcontainer">
+<div class="imgcontainer">
     <img src="Image/favicon.png" alt="Malllogo" class="malllogo">
-  </div>
+</div>
 
+
+
+
+
+<!-- 
   <div class="container">
-    <span class="details">Username</span>
-    <input type="text" id = "username" placeholder="Enter your username" name="username" >
+  <form action="index.php" method="post">
+  <span class="details">Username</span>
+  <input type="text" id = "username" placeholder="Enter your username" name="username" >
+  <span class="details">Password</span>
+  <input type="password" id = "pw" placeholder="Enter your password" name="password_member">
+  <input id="pswinput" type="submit" value="login" onclick="password()" name="pass"></input>
+  </form> -->
 
-    <span class="details">Password</span>
-    <input type="password" id = "pw" placeholder="Enter your password" name="password_member">
-    <input id="pswinput" type="submit" value="login" onclick="password()" name="pass"></input>
-</form>
-
+  <div>
+  <form method="post" action="Loggedin.php">
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Submit" name="submit">
+   </form>     
+  </div>
 
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
+  
+
+
+
+
+
 
 
   <div class="container" style="background-color:#f1f1f1">
