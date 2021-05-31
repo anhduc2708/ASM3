@@ -1,12 +1,3 @@
-<?php
-$userfile = fopen("Member_data.txt","r");
-$readfile = fread($userfile,filesize("Member_data.txt"));
-echo "<pre>";
-var_dump($readfile);
-echo "</pre>"
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -217,7 +208,7 @@ footer{
   <header>
     <!-- Logo and navbar -->
     <div class="nav">
-      <ul class="logo"><a href="index.php"><img src="Image/Malllogo.png" width="200px" ></a></ul>
+      <ul class="logo"><a href="Login.php"><img src="Image/Malllogo.png" width="200px" ></a></ul>
 
       <ul class="Searchbar">
           <input type="search" id="search" placeholder="Search..." />
@@ -248,19 +239,22 @@ footer{
 
 <h2>Login</h2>
 
+<form action="index.php" method="post">
+
 
   <div class="imgcontainer">
     <img src="Image/favicon.png" alt="Malllogo" class="malllogo">
   </div>
 
   <div class="container">
-    <label ><b>Username</b></label>
-    <input id="Username" type="text" placeholder="Enter Username" name="uname" required>
+    <span class="details">Username</span>
+    <input type="text" id = "username" placeholder="Enter your username" name="username" >
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" id="password" placeholder="Enter Password"  required>
+    <span class="details">Password</span>
+    <input type="password" id = "pw" placeholder="Enter your password" name="password_member">
+    <input id="pswinput" type="submit" value="login" onclick="password()" name="pass"></input>
+</form>
 
-    <input id="pswinput" type="submit" value="login" onclick="password()"></input>
 
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
