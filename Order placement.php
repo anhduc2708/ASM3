@@ -1,4 +1,12 @@
 <?php
+  $filename = 'install.php';
+  if (file_exists($filename)) {
+      echo "<h1> 404 Error Connection </h1>";
+      exit();
+  }
+?>
+
+<?php
 //read file and add to array
 function read_array(){
 $filearray = [];
