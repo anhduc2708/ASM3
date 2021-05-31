@@ -142,7 +142,7 @@
 
 
       <button class="button2" onclick="addItemtoCart(title,price,imageSrc)">ADD TO CART</button>
-      <button class="button2"><a href="Order placement.html" target="_blank" onclick="addItemtoCart(title,price,imageSrc)">BUY NOW</a></button>
+      <button class="button2"><a href="Order placement.php" target="_blank" onclick="addItemtoCart(title,price,imageSrc)">BUY NOW</a></button>
 
       <div class="Description">
         <h1> Description</h1>
