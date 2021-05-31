@@ -181,9 +181,9 @@
         return $result;
       };
 
-      // echo '<pre>';
-      // var_dump(new_stores_arr());
-      // echo '</pre>'
+      echo '<pre>';
+      var_dump(new_stores_arr());
+      echo '</pre>';
 
     // final part
     function display_information($array){
