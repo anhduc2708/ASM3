@@ -337,7 +337,7 @@ aside a{
   // echo '</pre>';  
 
   // display products
-  function display_product($arr){
+  function display_product_arr($arr){
     // $arr = new_product_arr();
     $all_products_arr = read_all_products();
     $result = [$arr[0]];
@@ -351,8 +351,8 @@ aside a{
     return $result;
 };
 
-  $oldest_arr =  display_product(old_product_arr());
-  $newest_arr =  display_product(new_product_arr());
+  $oldest_arr =  display_product_arr(old_product_arr());
+  $newest_arr =  display_product_arr(new_product_arr());
 
   // echo "<pre>";
   // var_dump($oldest_arr);
@@ -363,63 +363,57 @@ aside a{
   // echo "</pre>";
   
 
+  // display function
+  function display_product($array){
+		$product_img = ['Image/cap1.png', 'Image/cap2.png', 'Image/cap3.png', 'Image/cap4.png', 'Image/footballshoes1.png', 'Image/footballshoes2.png', 'Image/footballshoes3.png', 'Image/footballshoes4.png', 'Image/shirts1.png', 'Image/shirts2.png'];
+		for ($i=0; $i <count($array); $i++) {
+		  $display_name = $array[$i][0];
+		  $display_price = $array[$i][1];
+      $display_date = $array[$i][2];
+			echo "<div class='productimg'>
+					<a target='_blank' href='detailpage.php'>
+					<img src='$product_img[$i]' alt='Shoe' height='100'>
+					</a>
+					<div class='prices'>$display_price$</div>
+					<div class='prices'>$display_name</div>
+          <div class='prices'>$display_date</div>
+					</div>"	;	 
+		}
+	  };
+
+
 
   ?>
-
-
-
-
-
-
     <aside id="left">
       <a href="Oldest.php" class="previous"> <button type="button" name="button" id="move" > &laquo; Previous</button></a>
     </aside>
 
   <main>
-
+  
   <div class="options">
-  <h2>Select Display Options By Day</h2><br>
-  <button>Newest First</button>
-  <label> OR </label>
-  <button>Oldest First</button>
+  <form method="post">
+      <input type="submit" name="letter_A" value="Oldest Product" />
+      <input type="submit" name="letter_B" value="Newest Product" />
+  </form> 
   </div>
+   
 
   
 
-  <h2>Newest Products:</h2><br> 
-	<h2>Shoes</h2>
-    <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shoes4.png" alt="Shoe" height="100">
-		</a>
-	<div class="prices">250$</div>
-	<div class="prices">Nike Boost</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shoes2.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">300$</div>
-	<div class="prices">Nike Force</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/shoes1.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike Jordan</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/shoes3.png" alt="Shoe" height="400">
-		</a>
-	<div class="prices">400$</div>
-	<div class="prices">Nike HD Grade Edition</div>
-  </div><br>
-
+  <h2>Display Products:</h2><br> 
+  
+  
+  <?php 
+  if(array_key_exists('letter_A', $_POST)) {
+    echo '<h3>The new products</h3>';
+    display_product($oldest_arr);
+  }
+  else if(array_key_exists('letter_B', $_POST)) {
+    echo '<h3>The old products</h3>';
+    display_product($newest_arr);
+  }
+  
+  ?>
 
 
     </main>
