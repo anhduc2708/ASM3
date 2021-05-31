@@ -183,6 +183,7 @@ main h2{
     </style>
   </head>
   <body>
+
     <header>
       <img src="Image/Store logo.png" height="100%" width="150px"></img>
       <nav>
@@ -192,18 +193,24 @@ main h2{
         </nav>
         <div>
         <label for="ProductBrowse">Browse Product:</label>
- <select name="Browse">
+ 	<select name="Browse">
    <a href="Browsestore_By_Category"><option value="Browse By Name">By Categories</option></a>
    <option value="Browse By Release Day"> By Release Day</option>
- </select>
-</div>
+ 	</select>
+	</div>
     </header>
+
+
+
     <aside id="left">
 
 	 <img src="Image/saleoffpic.png" height="100%" width="100%" float="left"></img>
 
 
     </aside>
+
+	<?php ?>
+
     <main>
 	<h2>Shoes</h2>
     <div class="productimg">
