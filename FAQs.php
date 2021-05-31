@@ -1,3 +1,12 @@
+<?php
+  $filename = 'install.php';
+  if (file_exists($filename)) {
+      echo "<h1> 404 Error Connection </h1>";
+      exit();
+  }
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
