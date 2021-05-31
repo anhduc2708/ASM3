@@ -386,8 +386,8 @@ aside a{
 
   
 
-  <!-- <h2>Newest Products:</h2><br> -->
-	<!-- <h2>Shoes</h2>
+  <h2>Newest Products:</h2><br> 
+	<h2>Shoes</h2>
     <div class="productimg">
 		<a target="_blank" href="detailpage.php">
 		<img src="Image/shoes4.png" alt="Shoe" height="100">
@@ -418,42 +418,9 @@ aside a{
 		</a>
 	<div class="prices">400$</div>
 	<div class="prices">Nike HD Grade Edition</div>
-</div><br> -->
+  </div><br>
 
 
-<!-- <h2>Oldest Products:</h2><br> -->
-	<!-- <h2>Short</h2>
-	 <div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/Short1.jpg" alt="Short" width="600" height="300px">
-		</a>
-	<div class="prices">50$</div>
-	<div class="prices">Adidas Original Style</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/Short2.jpg" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">39$</div>
-	<div class="prices">Underarmor Short</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="detailpage.php">
-		<img src="Image/Short3.jpg" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">49$</div>
-	<div class="prices">Grey Edition Adias</div>
-	</div>
-
-	<div class="productimg">
-		<a target="_blank" href="Detailpage2.php">
-		<img src="Image/Short3.png" alt="Short" width="600" height="400">
-		</a>
-	<div class="prices">60$</div>
-	<div class="prices">Nike Full Black Edition</div>
-	</div> -->
 
     </main>
 
