@@ -73,6 +73,9 @@
 
   <body>
     <h1>This is Dashboard Menu</h1>
+    <label>Click to enter the system</label>
+    <button type="button" name="button"><a href="index.php">HomePage</a></button>
+
     <h2>About-us Editing</h2>
     <form name="edit_form" method="post" action="save_About_us.php" onsubmit="About_us_encode_content()">
     <textarea name="About_us_content" id="About_us_content" style="width:100%;" rows="20"><?php echo $About_us_html; ?></textarea>
@@ -98,7 +101,7 @@
 </form>
 <br>
 
-<button type="button" name="button"><a href="index.php">HomePage</a></button>
+
 
   </body>
 

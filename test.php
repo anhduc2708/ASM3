@@ -1,8 +1,8 @@
 <?php
-  $filename = 'instal1l.php';
+  $filename = 'install.php';
   if (file_exists($filename)) {
       echo "<h1> 404 Error Connection </h1>";
-      exit(test.php);
+      exit();
   }
 ?>
 
