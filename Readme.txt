@@ -60,4 +60,8 @@ w3resource.com, JavaScript: HTML Form - Phone Number validation, (Feb 26th 2020)
 
 Tyler H., StackOverflow.com, How can I require at least one checkbox be checked before a form can be submitted, (Oct 28th 2019). Accessed 2/5/2021 [Blogs]. Available: https://stackoverflow.com/questions/22238368/how-can-i-require-at-least-one-checkbox-be-checked-before-a-form-can-be-submitte?fbclid=IwAR3kAOPhmEMsk135hwo76EGcyZ5Dr9sbX3aJ9uFcUXz-82g2IDXhGli1TVo
 
-https://ecntt.com/
+Assignment 3:
+ECNTT, ecntt.com. Accessed 31/5/2021 [Online]. Available: https://ecntt.com/
+PHP, php.net. Accessed 31/5/2021 [Online]. Available: https://php.net/
+W3schools Online Web Tutortials, w3schools.com. Accessed 29/5/2021 [Online]. Available: https://www.w3schools.com/
+StackOverflow, Every developer has a tab open to Stack Overflow, stackoverflow.com. Accessed 29/5/2021 [Online]. Available: https://stackoverflow.com/
