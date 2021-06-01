@@ -6,22 +6,6 @@
   }
 ?>
 
-<?php
-
-
-   function compare(){
-        if(!isset($_COOKIE["user"])){
-          header("location: Login.php");
-        
-        }
-        else{
-          header("location: Thank You.php");
-        }
-    
-  }
-
-   compare();
-  ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -93,8 +77,28 @@
             </p>
             <br>
             <button class="buy-button"><a href="Store home page.php" target="_blank">CONTINUE SHOPPING</a></button>
-            <button id = "order-button" class="buy-button"><a href="Thank You.php" target="_blank" onclick="compare()">ORDER NOW</a></button>
+            <form action="" method = "post">
+              <button id = "order-button" class="buy-button" name ="compare">ORDER NOW</button>
+            </form>
+            
           </div>
+
+  <?php
+   function compare(){
+        if(!isset($_COOKIE["user"])){
+          header("location: Login.php");
+        
+        }
+        else{
+          header("location: Thank You.php");
+        }
+    
+  }
+    if(array_key_exists('compare', $_POST)) {
+      compare();
+    }
+  ?>
+
       </div>
       <div id="consent-popup" class="cookies">
         <H1>I uses Cookie</H1>

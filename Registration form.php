@@ -256,6 +256,8 @@ function test_input($data) {
             </div>
 
             <div class="button">
+              <input type="reset" value="Reset"> <br>
+
               <input type="submit" value="Register" onclick="registerFunctionals()">
             </div>
           </form>
@@ -301,7 +303,7 @@ $data_array= array($username, $email, $name, $passwordhash, $phone_number, $addr
   </div>
 
 </div>
-</body>
+
   <footer>
     <!-- Bottom nav menu -->
     <div class="Bottom-nav">
