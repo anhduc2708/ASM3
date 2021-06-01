@@ -14,18 +14,21 @@
 function read_array(){
 $filearray = [];
 $file_to_read= fopen("Member_data.txt","r");
-
-$first = fgets($file_to_read);
-$filearray = [$first];
-$filearray[1]="";
-if($first != feof($file_to_read)){
-  $file_line = fgets($file_to_read);
-  for ($i=1; $i < count($filearray) ; $i++) {
-    $filearray[$i]= $file_line;
-    }
+$count=0;
+while(!feof($file_to_read)){
+  $first= fgets($file_to_read);
+  
+  if(feof($file_to_read)){
+    
+   break;
+  
   }
+  array_push($filearray,$first);
+}
+
 return $filearray;
-};
+}
+;
 
 // echo "<pre>";
 // var_dump(read_array());
@@ -47,35 +50,36 @@ return $first_var;
 // var_dump(take_line());
 // echo "</pre>";
 
-// // get id and pass and hassing password
+// // Valid user
 function check(){
+  $user = take_line();
   if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST['username'];
     $pass = $_POST['password'];
-    $user = take_line();
     
-    // for ($i=0; $i < count($user); $i++) { 
-    //   if (empty($id).empty($pass).($id != $user[$i])){
-    //     $result= 2;
+    
+    for ($i=0; $i < count($user); $i++) { 
+      if (empty($id).empty($pass).($id != $user[$i])){
+        $result= 2;
         
-    //   } else{
-    //     $result= 0;
+      } else{
+        $result= 0;
 
-    //     break;
-    //   }
-    // }
+        break;
+      }
+    }
 
-    // if($result == 2){
-    //   header('location: Login.php');
-    // }
-    // else{
-    //   echo "hi";
+    if($result == 2){
+      header('location: Login.php');
+    }
+    else{
+    
     // }
    
-    return $user;
+    // return $user;
 }
 };
-
+}
 // check();
 echo "<pre>";
 var_dump(check());
