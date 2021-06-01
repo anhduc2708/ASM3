@@ -7,6 +7,19 @@
 ?>
 
 
+<?php 
+
+function compare(){
+  if(isset($_COOKIE["user"])){
+    header("location: Loggedin.php");
+  }
+
+};
+compare();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -7,72 +7,19 @@
 ?>
 
 <?php
-//read file and add to array
-function read_array(){
-$filearray = [];
-$file_to_read= fopen("Member_data.txt","r");
- // $readfile= fread($file_to_read,filesize("Member_data.txt"));
-  $first = fgets($file_to_read);
-  $filearray = [$first];
-  $filearray[1]="";
-    if($first != feof($file_to_read)){
-      $file_line = fgets($file_to_read);
-      // echo $file_line;
-      for ($i=1; $i < count($filearray) ; $i++) {
-        $filearray[$i]= $file_line;
-      }
-      }
-fclose($file_to_read);
-return $filearray;
-}
-  // echo "<pre>";
-  // var_dump(read_array());
-  // echo "</pre>";
-  // split lines
 
-   function take_line(){
-     $file_arr = read_array();
-     $first_var = [];
-     $count= 0;
-     foreach (read_array() as $key) {
-       $line_split= explode(",",$key);
-       // echo $line_split[0]. "<br>";
-       $first_var[$count++]=$line_split[0];
-     }
-     return $first_var;
-   };
-   // echo "<pre>";
-   // var_dump(take_line());
-   // echo "</pre>";
 
    function compare(){
-    $user_arr= take_line();
-
-    // foreach ($user_arr as $key) {
-    //   echo $key."<br>";
-    //   if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    //   $id = $_POST['username'];
-    //   $pass = $_POST['password_member'];
-    //   if (condition) {
-    //     // code...
-    //   }
-    // }
-    // }
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $id = $_POST['username'];
-    $pass = $_POST['password_member'];
-    for ($i=0; $i < count($user_arr) ; $i++) {
-        if( $user_arr[$i] === $id){
-          header("location: Thank You.php");
-          break;
+        if(!isset($_COOKIE["user"])){
+          header("location: Login.php");
+        
         }
         else{
-          header("location: Login.php");
+          header("location: Thank You.php");
         }
-    }
+    
   }
-}
+
    compare();
   ?>
 <!DOCTYPE html>

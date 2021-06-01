@@ -17,18 +17,14 @@ $file_to_read= fopen("Member_data.txt","r");
 $count=0;
 while(!feof($file_to_read)){
   $first= fgets($file_to_read);
-  
   if(feof($file_to_read)){
-    
-   break;
-  
+   break; 
   }
   array_push($filearray,$first);
 }
 
 return $filearray;
-}
-;
+};
 
 // echo "<pre>";
 // var_dump(read_array());
@@ -39,7 +35,7 @@ function take_line(){
 $file_arr = read_array();
 $first_var = [];
 $count= 0;
-foreach (read_array() as $key) {
+foreach ($file_arr as $key) {
   $line_split= explode(",",$key);
   $first_var[$count++]=$line_split[0];
 }
@@ -56,7 +52,7 @@ function check(){
   if ($_SERVER["REQUEST_METHOD"] == "POST"){
     $id = $_POST['username'];
     $pass = $_POST['password'];
-    
+    $user_cook="user";
     
     for ($i=0; $i < count($user); $i++) { 
       if (empty($id).empty($pass).($id != $user[$i])){
@@ -64,7 +60,7 @@ function check(){
         
       } else{
         $result= 0;
-
+        setcookie($user_cook, $id, time() + (86400 * 30), "/");
         break;
       }
     }
@@ -80,15 +76,52 @@ function check(){
 }
 };
 }
-// check();
-echo "<pre>";
-var_dump(check());
-echo "</pre>";
+check();
 
-// $check = check();
-// if ($check != 2) {
-//   header('location: Login.php');
-// }
+
+function compare(){
+  if(!isset($_COOKIE["user"])){
+    header("location: Login.php");
+  }
+};
+compare();
+
+// add all data to arr split
+function data_arr(){
+  $file_arr = read_array();
+  $data_arr = [];
+  $count= 0;
+  foreach (read_array() as $key) {
+    $line_split= explode(",",$key);
+    $data_arr[$count++] = [$line_split[0], $line_split[1] , $line_split[2], $line_split[3], $line_split[4], $line_split[5], $line_split[6], $line_split[7], $line_split[8] ];
+  }
+  return $data_arr;
+};
+
+// echo "<pre>";
+// var_dump(data_arr());
+// echo "</pre>";
+
+
+
+
+// display information
+function display_arr(){
+  $user = $_COOKIE['user'];
+  $data_arr = data_arr();
+  $result = [];
+  for ($i=0; $i < count($data_arr) ; $i++) { 
+      if ($data_arr[$i][0] === $user) {
+        $result = $data_arr[$i];
+      }
+  }
+  return $result;
+  // return $data_arr[0][1];
+}
+// echo "<pre>";
+// var_dump(display_arr());
+// echo "</pre>";
+
 
 ?>
 
@@ -361,26 +394,24 @@ color:white;
 
 </aside>
 <main>
+
+ 
 <div class="mainarea">
 <h2>Personal Information</h2>
 <div class="information">
 <div class="nameid">
-<p><strong>First Name:</strong> Nam</p>
-<br>
-<p><strong>Last Name:</strong> Tran</p>
-<br>
-<p><strong>Full Name:</strong> Tran Chan Nam</p>
+<p><strong>Full Name:</strong> <?php echo display_arr()[2]; ?> </p>
 <br>
 </div>
-<p><strong>Nick name:</strong> Nick Tran</p>
+<p><strong>Username:</strong> <?php echo display_arr()[0]; ?></p>
 <br>
 <p><strong>Role:</strong> User</p>
 <br>
-<p><strong>Email:</strong> channam1501@gmail.com</p>
+<p><strong>Email:</strong> <?php echo display_arr()[1]; ?></p>
 <br>
-<p><strong>Phone Number:</strong> 0326464392</p>
+<p><strong>Phone Number:</strong> <?php echo display_arr()[4]; ?></p>
 <br>
-<p><strong>Address:</strong> 703 Nguyen Van Linh HCM city</p>
+<p><strong>Address:</strong> <?php echo display_arr()[5]; ?></p>
 <br>
 <p><strong>Website:</strong> personal.com</p>
 
